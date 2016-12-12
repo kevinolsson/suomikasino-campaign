@@ -6,11 +6,9 @@ A WordPress campaign for ComeOn!
 ## Requirements
 Make sure all dependencies have been installed before moving on:
 * [PHP](https://github.com/Homebrew/homebrew-php) >= 5.5 - `brew install php56`
-
-* PHP >= 5.5 - `brew install php56`
-* Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) 
 * MySQL - `brew install mysql`
-* honcho - `pip install honcho`
+* Honcho - `pip install honcho`
 
 ## Installation
 
