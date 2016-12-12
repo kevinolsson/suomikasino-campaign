@@ -8,18 +8,17 @@ Make sure all dependencies have been installed before moving on:
 * [PHP](https://github.com/Homebrew/homebrew-php) >= 5.5 - `brew install php56`
 * [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) 
 * MySQL - `brew install mysql`
-* Honcho - `pip install honcho`
+* [Honcho](https://github.com/nickstenning/honcho) - `pip install honcho`
+* [wp-cli](https://wp-cli.org/docs/installing/) - `brew install homebrew/php/wp-cli`
+* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 ## Installation
-
-Go to the project directory and run `composer install`
-
+Go to project directory and run composer install.
 ```
 $ composer install
 ```
 
 Set up your database
-
 ```
 $ mysql -u root -p
 
