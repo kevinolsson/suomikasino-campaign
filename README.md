@@ -13,56 +13,52 @@ Make sure all dependencies have been installed before moving on:
 * [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 ## Installation
-Go to project directory and run composer install.
+1. Go to project directory and run composer install.
 ```
 $ composer install
 ```
 
-Set up your database
+2. Set up your database
 ```
 $ mysql -u root -p
-
+-
 mysql> CREATE DATABASE database_name;
 mysql> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON database_name.* TO 'newuser'@'localhost';
 ```
 
-Copy `.env.example` to `.env` and update environment variables:
-
-* `DB_NAME` - Database name
-* `DB_USER` - Database user
-* `DB_PASSWORD` - Database password
-* `DB_HOST` - Database host
-* `WP_ENV` - Set to environment (`development`, `staging`, `production`)
-* `WP_HOME` - Full URL to WordPress home (http://0.0.0.0:8000)
-* `WP_SITEURL` - Full URL to WordPress including subdirectory (http://0.0.0.0:8000/wp)
-* `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT` - Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command) or from the [WordPress Salt Generator](https://api.wordpress.org/secret-key/1.1/salt/)
-
-Install front-end build dependencies:
-
+3. Copy `.env.example` to `.env` and update environment variables
 ```
-$ cd web/app/themes/light-novel
+cp .env.example .env
+```
+Automatically generate the security keys
+```
+wp dotenv salts regenerate
+```
+
+4. Update remaining environment variables:
+	* `DB_NAME` - Database name
+	* `DB_USER` - Database user
+	* `DB_PASSWORD` - Database password
+	* `DB_HOST` - Database host
+	* `WP_ENV` - Set to environment (`development`, `staging`, `production`)
+	* `WP_HOME` - Full URL to WordPress home (http://0.0.0.0:8000)
+	* `WP_SITEURL` - Full URL to WordPress including subdirectory (http://0.0.0.0:8000/wp)
+
+5. Install front-end build dependencies:
+```
+$ cd web/app/themes/comeon
 $ npm install
 $ bower install
 ```
 
 ## Developing
 
-To start everything up, use `honcho`:
-
 ```
 $ honcho start -f Procfile.dev
 ```
 
-To start the PHP dev server manually:
-
+You might need to open a new tab 
 ```
-$ php -S localhost:8000 -t web/
-```
-
-To start gulp:
-
-```
-$ cd web/app/themes/light-novel
-$ gulp watch
+http://0.0.0.0:8000
 ```
