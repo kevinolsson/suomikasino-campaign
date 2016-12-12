@@ -17,26 +17,24 @@ Make sure all dependencies have been installed before moving on:
 ```
 $ composer install
 ```
-
-2. Set up your database
+2. Set up your database.
 ```
 $ mysql -u root -p
--
+```
+```
 mysql> CREATE DATABASE database_name;
 mysql> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON database_name.* TO 'newuser'@'localhost';
 ```
-
 3. Copy `.env.example` to `.env` and update environment variables
 ```
 cp .env.example .env
 ```
-Automatically generate the security keys
+4.Automatically generate the security keys
 ```
 wp dotenv salts regenerate
 ```
-
-4. Update remaining environment variables:
+5. Update remaining environment variables:
 	* `DB_NAME` - Database name
 	* `DB_USER` - Database user
 	* `DB_PASSWORD` - Database password
