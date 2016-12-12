@@ -14,11 +14,8 @@ Make sure all dependencies have been installed before moving on:
 
 ## Installation
 1. Go to project directory and run composer install.
-
-				```
 				$ composer install
-				```
-
+				
 2. Set up your database.
 
 				```
@@ -30,7 +27,7 @@ Make sure all dependencies have been installed before moving on:
 				mysql> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 				mysql> GRANT ALL PRIVILEGES ON database_name.* TO 'newuser'@'localhost';
 				```
-				
+
 3. Copy `.env.example` to `.env` and update environment variables
 ```
 cp .env.example .env
