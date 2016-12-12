@@ -40,6 +40,7 @@ Make sure all dependencies have been installed before moving on:
 	* `WP_HOME` - Full URL to WordPress home (http://0.0.0.0:8000)
 	* `WP_SITEURL` - Full URL to WordPress including subdirectory (http://0.0.0.0:8000/wp)
 6. Install front-end build dependencies:
+
 		$ cd web/app/themes/comeon
 		$ npm install
 		$ bower install
