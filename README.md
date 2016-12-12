@@ -26,28 +26,21 @@ Make sure all dependencies have been installed before moving on:
 		mysql> GRANT ALL PRIVILEGES ON database_name.* TO 'newuser'@'localhost';
 
 3. Copy `.env.example` to `.env` and update environment variables
-```
-cp .env.example .env
-```
-4.Automatically generate the security keys
-```
-wp dotenv salts regenerate
-```
+		cp .env.example .env
+4. Generate the security keys (typing them is a PITA).
+		wp dotenv salts regenerate
 5. Update remaining environment variables:
 	* `DB_NAME` - Database name
 	* `DB_USER` - Database user
 	* `DB_PASSWORD` - Database password
 	* `DB_HOST` - Database host
-	* `WP_ENV` - Set to environment (`development`, `staging`, `production`)
+	* `WP_ENV` - Set to environment (development, staging, production)
 	* `WP_HOME` - Full URL to WordPress home (http://0.0.0.0:8000)
 	* `WP_SITEURL` - Full URL to WordPress including subdirectory (http://0.0.0.0:8000/wp)
-
 5. Install front-end build dependencies:
-```
-$ cd web/app/themes/comeon
-$ npm install
-$ bower install
-```
+		$ cd web/app/themes/comeon
+		$ npm install
+		$ bower install
 
 ## Developing
 
@@ -55,7 +48,7 @@ $ bower install
 $ honcho start -f Procfile.dev
 ```
 
-You might need to open a new tab 
+Finally, you might need to open a new tab:
 ```
 http://0.0.0.0:8000
 ```
