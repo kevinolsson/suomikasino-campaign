@@ -14,6 +14,7 @@ Make sure all dependencies have been installed before moving on:
 
 ## Installation
 1. Go to project directory and run composer install.
+
 				$ composer install
 				
 2. Set up your database.
