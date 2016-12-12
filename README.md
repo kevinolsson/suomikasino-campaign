@@ -30,7 +30,9 @@ Make sure all dependencies have been installed before moving on:
 		cp .env.example .env
 
 4. Generate the security keys (typing them is a PITA).
+
 		wp dotenv salts regenerate
+		
 5. Update remaining environment variables:
 	* `DB_NAME` - Database name
 	* `DB_USER` - Database user
