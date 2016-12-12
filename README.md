@@ -1,7 +1,11 @@
 # ComeOn Work Assignment
-A Wordpress campaign done in partial fulfillment of the Web Designer / Front-End Developer job application at ComeOn.
+A WordPress campaign for ComeOn!
+* Built using [Bedrock](https://roots.io/bedrock/) & [Sage](https://roots.io/sage/)
+* Consolidated using [Honcho](https://github.com/nickstenning/honcho)
 
 ## Requirements
+Make sure all dependencies have been installed before moving on:
+* [PHP](https://github.com/Homebrew/homebrew-php) >= 5.5 - `brew install php56`
 
 * PHP >= 5.5 - `brew install php56`
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
