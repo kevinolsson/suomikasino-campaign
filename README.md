@@ -26,7 +26,7 @@ Make sure all dependencies have been installed before moving on:
 		mysql> GRANT ALL PRIVILEGES ON database_name.* TO 'newuser'@'localhost';
 
 3. Copy `.env.example` to `.env` and update environment variables
-		`cp .env.example .env`
+	`cp .env.example .env`
 4. Generate the security keys (typing them is a PITA).
 		wp dotenv salts regenerate
 5. Update remaining environment variables:
