@@ -10,7 +10,6 @@
 			<input type="button" class="form__button --big --button --attached-right" value="Redeem">
 		</div><!--/form-->
 		<div class="calendar">	
-			
 				<div id="block-25" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
@@ -85,7 +84,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">1</h3>
+						<h3 class="--red">Jan 1</h3>
 						<p>Visit this site on New years to find out our Mystery Bonus!!</p>
 					</div>
 				</div><!--/1-->
@@ -129,6 +128,11 @@
 				</div><!--/5-->
 			
 		</div><!--/calendar-->
+		<div class="switcher">
+			hello
+		</div><!--/switcher-->
+
+
 
 	</div><!--/hero__wrapper-->
 </div><!--/hero-->

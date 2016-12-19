@@ -18,9 +18,7 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
-@import "components/calendar-images";
 @import "layouts/header";
-@import "layouts/calendar";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
@@ -28,3 +26,6 @@
 @import "layouts/tinymce";
 
 @import "layouts/hero";
+@import "components/calendar";
+@import "components/calendar-images";
+@import "components/switcher";

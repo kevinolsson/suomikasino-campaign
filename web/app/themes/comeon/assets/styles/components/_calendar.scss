@@ -65,20 +65,20 @@
 		// Calendar Corners 
 		// separated this to keep code readable
 		@include media($tablet) {
-			&#block-25 { border-radius: 12 0px 0px 0px; }
-			&#block-27 { border-radius: 0px 12 0px 0px; }
-			&#block-3 { border-radius: 0px 0px 0px 12; }
-			&#block-5 { border-radius: 0px 0px 12 0px; }
+			&#block-25 { border-radius: 10px 0px 0px 0px; }
+			&#block-27 { border-radius: 0px 10px 0px 0px; }
+			&#block-3 { border-radius: 0px 0px 0px 10px; }
+			&#block-5 { border-radius: 0px 0px 10px 0px; }
 		}
 		@include media(min-width $mobile max-width $tablet) {
-			&#block-25 { border-radius: 12 0px 0px 0px; }
-			&#block-26 { border-radius: 0px 12 0px 0px; }
-			&#block-4 { border-radius: 0px 0px 0px 12; }
-			&#block-5 { border-radius: 0px 0px 12 0px; }
+			&#block-25 { border-radius: 10px 0px 0px 0px; }
+			&#block-26 { border-radius: 0px 10px 0px 0px; }
+			&#block-4 { border-radius: 0px 0px 0px 10px; }
+			&#block-5 { border-radius: 0px 0px 10px 0px; }
 		}
 		@include media(max-width $mobile) {
-			&#block-25 { border-radius: 12 12 0px 0px; }
-			&#block-5 { border-radius: 0px 0px 12 12; }
+			&#block-25 { border-radius: 10px 10px 0px 0px; }
+			&#block-5 { border-radius: 0px 0px 10px 10px; }
 		}
 
 	}
