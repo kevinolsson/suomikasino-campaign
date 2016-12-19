@@ -1,3 +1,11 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500');
+
+// Neat & Bourbon
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
+
+// Variables
 @import "common/variables";
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
@@ -5,11 +13,10 @@
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
-@import "common/global";
+@import "common/typography";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/grid";
 @import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";

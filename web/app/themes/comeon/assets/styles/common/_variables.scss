@@ -1,7 +1,66 @@
-// Grid settings
-$enable-flex:           true;
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
-
 // Colors
-$brand-primary:         #27ae60;
+$teal: 			#00797B;
+$well-read: 	#B03133;
+$loafer: 		#F0F6E7;
+$cocoa-brown: 	#201A1A;
+$mine-shaft:	#2E2929;
+$white:			#FFFFFF;
+
+$calendar-bg: rgba(32,26,26,.95);
+$newyear-bg: rgba(46,42,42,.95);
+
+// Typography
+
+$modular-scale-ratio: 1.3;
+$modular-scale-base: 16px;
+
+// -- Stack
+
+$roboto-stack: "Roboto", Helvetica, Arial, sans-serif;
+$roboto-slab-stack: "Roboto Slab", Helvetica, Arial, sans-serif;
+
+// -- Weight
+
+$bold: 700;
+$medium: 500;
+$regular: 400;
+
+// -- Base
+
+$base-font-size: $modular-scale-base;
+$base-line-height-ratio: 1.4;
+$base-line-height: $base-font-size * $base-line-height-ratio;
+
+// -- Headers
+
+$header-line-height-ratio: 1.25;
+
+$h1-font-size: modular-scale(6);
+$h1-line-height: $h1-font-size * $header-line-height-ratio;
+$h1-font-size--mobile: modular-scale(4);
+$h1-line-height--mobile: $h1-font-size--mobile * $header-line-height-ratio;
+
+$h2-font-size: modular-scale(4);
+$h2-line-height: $h2-font-size * $header-line-height-ratio;
+$h2-font-size--mobile: modular-scale(3);
+$h2-line-height--mobile: $h2-font-size--mobile * $header-line-height-ratio;
+
+$h3-font-size: modular-scale(3);
+$h3-line-height: $h3-font-size * $header-line-height-ratio;
+$h3-font-size--mobile: modular-scale(2);
+$h3-line-height--mobile: $h3-font-size--mobile * $header-line-height-ratio;
+
+$h4-font-size: modular-scale(2);
+$h4-line-height: $h4-font-size * $header-line-height-ratio;
+$h4-font-size--mobile: modular-scale(1);
+$h4-line-height--mobile: $h4-font-size--mobile * $header-line-height-ratio;
+
+$h5-font-size: modular-scale(1);
+$h5-line-height: $h5-font-size * $header-line-height-ratio;
+$h5-font-size--mobile: modular-scale(0);
+$h5-line-height--mobile: $h5-font-size--mobile * $header-line-height-ratio;
+
+// -- Small
+
+$small-font-size: modular-scale(-1);
+$small-line-height: $small-font-size * $base-line-height-ratio;

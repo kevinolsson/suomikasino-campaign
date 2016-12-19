@@ -1,0 +1,74 @@
+// Typography
+
+body {
+	font-size: $base-font-size;
+	font-weight: $regular;
+	font-family: $roboto-stack;
+	line-height: $base-line-height;
+}
+
+h1 {
+	font-size: $h1-font-size;
+	font-weight:$bold;
+	font-family: $roboto-slab-stack;
+	line-height: $h1-line-height;
+	@include media(max-width 768px) {
+		font-size: $h1-font-size--mobile;
+		line-height: $h1-line-height--mobile;
+	}
+}
+
+h2 {
+	font-size: $h2-font-size;
+	font-weight:$bold;
+	font-family: $roboto-slab-stack;
+	line-height: $h2-line-height;
+	@include media(max-width 768px) {
+		font-size: $h2-font-size--mobile;
+		line-height: $h2-line-height--mobile;
+	}
+}
+
+h3 {
+	font-size: $h3-font-size;
+	font-weight:$bold;
+	font-family: $roboto-slab-stack;
+	line-height: $h3-line-height;
+	@include media(max-width 768px) {
+		font-size: $h3-font-size--mobile;
+		line-height: $h3-line-height--mobile;
+	}
+}
+
+h4 {
+	font-size: $h4-font-size;
+	font-weight:$regular;
+	font-family: $roboto-stack;
+	line-height: $h4-line-height;
+	@include media(max-width 768px) {
+		font-size: $h4-font-size--mobile;
+		line-height: $h4-line-height--mobile;
+	}
+}
+
+h5 {
+	font-size: $h5-font-size;
+	font-weight:$regular;
+	font-family: $roboto-stack;
+	line-height: $h5-line-height;
+	@include media(max-width 768px) {
+		font-size: $h5-font-size--mobile;
+		line-height: $h5-line-height--mobile;
+	}
+}
+
+
+small {
+	font-size: $small-font-size;
+	line-height: $small-line-height;
+}
+
+a {
+	// All links are Roboto Slab
+	font-family: $roboto-slab-stack !important;
+}
