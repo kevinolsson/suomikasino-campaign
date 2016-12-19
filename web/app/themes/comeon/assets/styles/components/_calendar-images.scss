@@ -59,3 +59,67 @@
 		@include calendar-image(-600px, 0px);
 	}
 }
+
+#block-31 {
+	&.--non-consecutive {
+		.calendar__card__image {
+			@include calendar-image(-700px, 0px);
+		}
+	}
+	&.--consecutive {
+		.calendar__card__image {
+			@include calendar-image(-800px, 0px);
+		}
+	}
+}
+
+#block-1 {
+	.calendar__card__image {
+		@include calendar-image(-900px, 0px);
+	}
+}
+
+#block-2 {
+	&.--non-consecutive {
+		.calendar__card__image {
+			@include calendar-image(0px, -100px);
+		}
+	}
+	&.--consecutive {
+		.calendar__card__image {
+			@include calendar-image(-100px, -100px);
+		}
+	}
+}
+
+#block-3 {
+	&.--non-consecutive {
+		.calendar__card__image {
+			@include calendar-image(-200px, -100px);
+		}
+	}
+	&.--consecutive {
+		.calendar__card__image {
+			@include calendar-image(-300px, -100px);
+		}
+	}
+}
+
+#block-4 {
+	&.--non-consecutive {
+		.calendar__card__image {
+			@include calendar-image(-400px, -100px);
+		}
+	}
+	&.--consecutive {
+		.calendar__card__image {
+			@include calendar-image(-500px, -100px);
+		}
+	}
+}
+
+#block-5 {
+	.calendar__card__image {
+		@include calendar-image(-600px, -100px);
+	}
+}
