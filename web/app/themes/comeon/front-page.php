@@ -11,7 +11,7 @@
 		</div><!--/form-->
 		<div class="calendar">	
 			
-				<div id="block-25" class="calendar__card">
+				<div id="block-25" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -21,7 +21,7 @@
 					</div>
 				</div><!--/25-->
 
-				<div id="block-26" class="calendar__card">
+				<div id="block-26" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -31,48 +31,66 @@
 					</div>
 				</div><!--/26-->
 
-				<div id="block-27" class="calendar__card">
+				<div id="block-27" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">26</h3>
+						<h3 class="--red">27</h3>
 						<p>100% deposit bonus until the 6th of January</p>
 					</div>
-				</div>
+				</div><!--/27-->
 			
 			
-				<div id="block-28" class="calendar__card">
-					.calendar__card
-				</div>
-				<div id="block-29" class="calendar__card">
-					.calendar__card
-				</div>
-				<div id="block-30" class="calendar__card">
-					.calendar__card
-				</div>
+				<div id="block-28" class="calendar__card --consecutive">
+					<div class="--right-content">
+						<div class="calendar__card__image"></div>
+					</div>
+					<div class="--left-content">
+						<h3 class="--red">28</h3>
+						<p>x3 Free Spins on Live Ruletti!</p>
+					</div>
+				</div><!--/28-->
+				<div id="block-29" class="calendar__card --consecutive">
+					<div class="--right-content">
+						<div class="calendar__card__image"></div>
+					</div>
+					<div class="--left-content">
+						<h3 class="--red">29</h3>
+						<p>99 Free attempts on online slot machines</p>
+					</div>
+				</div><!--/29-->
+				<div id="block-30" class="calendar__card --consecutive">
+					<div class="--right-content">
+						<div class="calendar__card__image"></div>
+					</div>
+					<div class="--left-content">
+						<h3 class="--red">30</h3>
+						<p>x3 win multiplier on Black Jack pro until the 6th of January!</p>
+					</div>
+				</div><!--/30-->
 			
 			
-				<div id="block-31" class="calendar__card">
+				<div id="block-31" class="calendar__card --consecutive">
 					.calendar__card
-				</div>
+				</div><!--/31-->
 				<div id="block-1" class="calendar__card --mystery">
 					.calendar__card
-				</div>
-				<div id="block-2" class="calendar__card">
+				</div><!--/1-->
+				<div id="block-2" class="calendar__card --consecutive">
 					.calendar__card
-				</div>
+				</div><!--/2-->
 			
 			
-				<div id="block-3" class="calendar__card">
+				<div id="block-3" class="calendar__card --consecutive">
 					.calendar__card
-				</div>
-				<div id="block-4" class="calendar__card">
+				</div><!--/3-->
+				<div id="block-4" class="calendar__card --consecutive">
 					.calendar__card
-				</div>
-				<div id="block-5" class="calendar__card">
+				</div><!--/4-->
+				<div id="block-5" class="calendar__card --consecutive">
 					.calendar__card
-				</div>
+				</div><!--/5-->
 			
 		</div><!--/calendar-->
 

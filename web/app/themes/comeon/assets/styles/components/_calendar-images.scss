@@ -34,3 +34,28 @@
 		@include calendar-image(-200px, 0px);
 	}
 }
+
+#block-28 {
+	&.--non-consecutive {
+		.calendar__card__image {
+			@include calendar-image(-300px, 0px);
+		}
+	}
+	&.--consecutive {
+		.calendar__card__image {
+			@include calendar-image(-400px, 0px);
+		}
+	}
+}
+
+#block-29 {
+	.calendar__card__image {
+		@include calendar-image(-500px, 0px);
+	}
+}
+
+#block-30 {
+	.calendar__card__image {
+		@include calendar-image(-600px, 0px);
+	}
+}
