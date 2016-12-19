@@ -10,9 +10,16 @@
 			<input type="button" class="form__button --big --button --attached-right" value="Redeem">
 		</div><!--/form-->
 		<div class="calendar">	
-			<div class="calendar__row">
+			
 				<div id="block-25" class="calendar__card">
-					.calendar__card
+					<div class="--right-content">
+						<div class="calendar__card__image"></div>
+					</div>
+					<div class="--left-content">
+						<h3>25</h3>
+						<p>999€ Bonus Money to start of the 12 days of Christmas!</p>
+					</div>
+
 				</div>
 				<div id="block-26" class="calendar__card">
 					.calendar__card
@@ -20,8 +27,8 @@
 				<div id="block-27" class="calendar__card">
 					.calendar__card
 				</div>
-			</div>
-			<div class="calendar__row">
+			
+			
 				<div id="block-28" class="calendar__card">
 					.calendar__card
 				</div>
@@ -31,19 +38,19 @@
 				<div id="block-30" class="calendar__card">
 					.calendar__card
 				</div>
-			</div>
-			<div class="calendar__row">
+			
+			
 				<div id="block-31" class="calendar__card">
 					.calendar__card
 				</div>
-				<div id="block-1" class="calendar__card">
+				<div id="block-1" class="calendar__card --mystery">
 					.calendar__card
 				</div>
 				<div id="block-2" class="calendar__card">
 					.calendar__card
 				</div>
-			</div>
-			<div class="calendar__row">
+			
+			
 				<div id="block-3" class="calendar__card">
 					.calendar__card
 				</div>
@@ -53,7 +60,7 @@
 				<div id="block-5" class="calendar__card">
 					.calendar__card
 				</div>
-			</div>
+			
 		</div><!--/calendar-->
 
 	</div><!--/hero__wrapper-->

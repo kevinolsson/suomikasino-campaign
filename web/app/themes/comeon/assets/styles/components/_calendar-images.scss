@@ -1,0 +1,36 @@
+@mixin calendar-image($x, $y){
+	@include hidpi(1.5) {
+		background: url(../images/calendar_icons@2x.png);
+		background-position: $x $y;
+		background-size: 1000px;
+		/* For some odd reason; I have to redeclare a few
+			lines of SaSS when using the @include hidpi() function.
+
+		*/
+	}
+	width: 100px;
+	height: 100px;
+	background: url(../images/calendar_icons.png);
+	background-position: $x $y;
+	background-size: 1000px;
+	margin: 0 auto;
+
+}
+
+#block-25 {
+	.calendar__card__image {
+		@include calendar-image(0px, 0px);
+	}
+}
+
+#block-26 {
+	.calendar__card__image {
+		@include calendar-image(0px, 0px);
+	}
+}
+
+#block-27 {
+	.calendar__card__image {
+		@include calendar-image(0px, 0px);
+	}
+}

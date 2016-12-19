@@ -1,0 +1,79 @@
+.calendar {
+	@include span-columns(12);
+	@include media(min-width $mobile, max-width $tablet) {
+		@include padding(null 30px null 30px);
+	}
+
+	.calendar__card {
+		@include media($tablet) {
+			@include span-columns(4 of 12);
+			@include margin(null 1px 2px 1px);
+			
+		}
+		@include media(min-width $mobile max-width $tablet) {
+			@include span-columns(6 of 12);
+			@include margin(null 1px 2px 1px);
+			
+		}
+		@include span-columns(12);
+		flex: 1;
+		margin-bottom: 2px;
+		background-color: $calendar-bg;
+		color: $loafer;
+		padding: 20px;
+		min-height: 180px;
+		
+
+
+		@include direction-context(right-to-left) {
+			.--left-content {
+				@include media($tablet) {
+					@include span-columns(6 of 10);
+					text-align: left;
+				}
+				text-align: center;
+			}
+			.--right-content {
+				@include media($tablet) {
+					@include span-columns(4 of 10);
+					padding-top: 20px;
+				}
+				margin-bottom: 10px;
+			}
+		}
+
+		// // corners
+		// &#block-25 {
+		// 	border-radius: 10px 0px 0px 0px;
+		// 	@include media(max-width $tablet) {
+		// 		border-radius: 10px 10px 0px 0px;
+		// 	}
+		// }
+		// &#block-27 {
+		// 	border-radius: 0px 10px 0px 0px;
+		// 	@include media(max-width $tablet) {
+		// 		border-radius: 0px;
+		// 	}
+		// }
+		// &#block-3 {
+		// 	border-radius: 0px 0px 0px 10px;
+		// 	@include media(max-width $tablet) {
+		// 		border-radius: 0px;
+		// 	}
+		// }
+		// &#block-5 {
+		// 	border-radius: 0px 0px 10px 0px;
+		// 	@include media(max-width $tablet) {
+		// 		border-radius: 0px 0px 10px 10px;
+		// 	}
+		// }
+
+		// modifiers
+		&.--mystery {
+			background-color: $newyear-bg;
+		}
+		&.--passed {
+			opacity: 0.5;
+		}
+	}
+}
