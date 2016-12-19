@@ -1,15 +1,51 @@
-// Search form
-.search-form {
-  @extend .form-inline;
+input {
+	background-color: $loafer;
+	border: none;
+	height: 50px;
+	outline: none;
+	-webkit-appearance: none;
+	@include padding(null 15px null 15px);
+
+	// modifiers
+	&.--button {
+		background-color: $well-read;
+		font-family: $roboto-slab-stack;
+		color: $loafer;
+	}
+	&.--big {
+		height: 60px;
+	}
+
+	&.--attached-left {
+		border-radius: 6px 6px 0px 0px;
+		//Its assumed that the left value will be on top
+		@include media($mobile) {
+			border-radius: 6px 0px 0px 6px;
+		}
+	}
+	&.--attached-right {
+		border-radius: 0px 0px 6px 6px;
+		@include media($mobile) {
+			border-radius: 0px 6px 6px 0px;
+		}
+	}
 }
-.search-form label {
-  font-weight: normal;
-  @extend .form-group;
+
+// placeholders
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    $mine-shaft;
+    opacity: 0.5;
 }
-.search-form .search-field {
-  @extend .form-control;
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    $mine-shaft;
+   opacity: 0.5;
 }
-.search-form .search-submit {
-  @extend .btn;
-  @extend .btn-secondary;
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    $mine-shaft;
+   opacity: 0.5;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    $mine-shaft;
+   opacity: 0.5;
 }

@@ -1,0 +1,10 @@
+body {
+	@include media(max-width $mobile) {
+		margin-top: -20px;
+		//cheap fix to a spacing issue
+	}
+}
+
+body * {
+	transition: all 0.1s ease-in;
+}
