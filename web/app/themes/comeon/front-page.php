@@ -16,16 +16,29 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3>25</h3>
+						<h3 class="--red">25</h3>
 						<p>999€ Bonus Money to start of the 12 days of Christmas!</p>
 					</div>
+				</div><!--/25-->
 
-				</div>
 				<div id="block-26" class="calendar__card">
-					.calendar__card
-				</div>
+					<div class="--right-content">
+						<div class="calendar__card__image"></div>
+					</div>
+					<div class="--left-content">
+						<h3 class="--red">26</h3>
+						<p>x3 win multiplier for Live Casino Holdem until the 6th of January!</p>
+					</div>
+				</div><!--/26-->
+
 				<div id="block-27" class="calendar__card">
-					.calendar__card
+					<div class="--right-content">
+						<div class="calendar__card__image"></div>
+					</div>
+					<div class="--left-content">
+						<h3 class="--red">26</h3>
+						<p>100% deposit bonus until the 6th of January</p>
+					</div>
 				</div>
 			
 			

@@ -25,12 +25,12 @@
 
 #block-26 {
 	.calendar__card__image {
-		@include calendar-image(0px, 0px);
+		@include calendar-image(-100px, 0px);
 	}
 }
 
 #block-27 {
 	.calendar__card__image {
-		@include calendar-image(0px, 0px);
+		@include calendar-image(-200px, 0px);
 	}
 }
