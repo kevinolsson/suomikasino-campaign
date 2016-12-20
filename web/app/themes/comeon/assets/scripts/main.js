@@ -15,15 +15,88 @@
 
 function calCon() {
   // Change description to consecutive bonuses
+    //25
+    $( "#block-25" ).find( "p").text("999€ Bonus Money to start of the 12 days of Christmas!");
+
+    //26
+    $( "#block-26" ).find( "p").text("x3 win multiplier for Casino Holdem until the 6th of January!");
+    //27
+    $( "#block-27" ).find( "p").text("100% deposit bonus until the 6th of January");
+    //28
+    $( "#block-28" ).find( "p").text("x3 Free spins on Live Ruletti!");
+    //29
+    $( "#block-29" ).find( "p").text("99 Free attempts on online slot machines!");
+    //30
+    $( "#block-30" ).find( "p").text("x3 win multiplier on Black Jack Pro until the 6th of January!");
+    //31
+    $( "#block-31" ).find( "p").text("Additional €999 Bonus Money to keep the party going!");
+    //1
+    $( "#block-1" ).find( "p").text("Visit this site on New years to find out our Mystery Bonus!");
+    //2
+    $( "#block-2" ).find( "p").text("200% deposit bonus until the 6th of January");
+    //3
+    $( "#block-3" ).find( "p").text("99 Free scratches in Scratch ahoy!");
+    $( "#block-3").removeClass("--non-consecutive").addClass("--consecutive");
+    //4
+    $( "#block-4" ).find( "p").text("4 Free attempts in Mega Fortune!");
+    //5
+    $( "#block-5" ).find( "p").text("x5 win multiplier in any game for the next 24hours!");
+
   // Change necessary images
+  for(i=25; i<=31; i++) {
+    //alert($("#block-"+i ).find( "p").text());
+    $("#block-"+i).removeClass("--non-consecutive").addClass("--consecutive");
+  }
+  for(i=1; i<=5; i++) {
+    //alert($("#block-"+i ).find( "p").text());
+    $("#block-"+i).removeClass("--non-consecutive").addClass("--consecutive");
+  }
+
   // Change underlines to red
+  $( ".--green" ).addClass("--red").removeClass("--green");
 
 }
 
 function calNoncon() {
   // Change description to nonconsecutive bonuses
+    //25
+    $( "#block-25" ).find( "p").text("999€ Bonus Money to start of the 12 days of Christmas!");
+    //26
+    $( "#block-26" ).find( "p").text("x3 win multiplier for Casino Holdem valid for the next 24 hours!");
+    //27
+    $( "#block-27" ).find( "p").text("100% deposit bonus active for the next 24 hours!");
+    //28
+    $( "#block-28" ).find( "p").text("x1 Free spin on Live Ruletti!");
+    //29
+    $( "#block-29" ).find( "p").text("10 Free attempts on online slot machines!");
+    //30
+    $( "#block-30" ).find( "p").text("x3 win multiplier for Black Jack Pro for the next 24 hours!");
+    //31
+    $( "#block-31" ).find( "p").text("Additional €200 Bonus Money to keep the party going!");
+    //1
+    $( "#block-1" ).find( "p").text("Visit this site on New years to find out our Mystery Bonus!");
+    //2
+    $( "#block-2" ).find( "p").text("100% deposit bonus for the next 24hours!");
+    //3
+    $( "#block-3" ).find( "p").text("10 Free scratches in Scratch ahoy!");
+    //4
+    $( "#block-4" ).find( "p").text("1 Free attempt in Mega Fortune!");
+    //5
+    $( "#block-5" ).find( "p").text("x5 win multiplier on your next 5 wins!");
+
   // Change necessary images
+  for(i=25; i<=31; i++) {
+    //alert($("#block-"+i ).find( "p").text());
+    $("#block-"+i).removeClass("--consecutive").addClass("--non-consecutive");
+  }
+  for(i=1; i<=5; i++) {
+    //alert($("#block-"+i ).find( "p").text());
+    $("#block-"+i).removeClass("--consecutive").addClass("--non-consecutive");
+  }
+
+
   // Change underlines to green
+  $( ".--red" ).addClass("--green").removeClass("--red");
 }
 
 $(".switcher").click(function() {
@@ -35,7 +108,7 @@ $(".switcher").click(function() {
     $(".switcher__right").removeClass('--not-active'); //right side becomes active
 
     // call function that changes calendar to nonconsecutive
-    setTimeout(function(){calNoncon()},300);
+    setTimeout(function(){calNoncon();},100);
 
   } else {
     // else calendar is pointing to consecutive
@@ -44,7 +117,7 @@ $(".switcher").click(function() {
     $(".switcher__right").addClass('--not-active'); //r right side becomes not active
 
     // call function that changes calendar to consecutive
-    setTimeout(function() { calCon() },300);
+    setTimeout(function(){calCon();},100);
   }
 });
 

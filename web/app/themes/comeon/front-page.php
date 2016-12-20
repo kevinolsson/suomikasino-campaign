@@ -25,7 +25,7 @@
 					</div>
 					<div class="--left-content">
 						<h3 class="--red">26</h3>
-						<p>x3 win multiplier for Live Casino Holdem until the 6th of January!</p>
+						<p>x3 win multiplier for Casino Holdem until the 6th of January!</p>
 					</div>
 				</div><!--/26-->
 				<div id="block-27" class="calendar__card --consecutive">
@@ -43,7 +43,7 @@
 					</div>
 					<div class="--left-content">
 						<h3 class="--red">28</h3>
-						<p>x3 Free Spins on Live Ruletti!</p>
+						<p>x3 Free spins on Live Ruletti!</p>
 					</div>
 				</div><!--/28-->
 				<div id="block-29" class="calendar__card --consecutive">
@@ -52,7 +52,7 @@
 					</div>
 					<div class="--left-content">
 						<h3 class="--red">29</h3>
-						<p>99 Free attempts on online slot machines</p>
+						<p>99 Free attempts on online slot machines!</p>
 					</div>
 				</div><!--/29-->
 				<div id="block-30" class="calendar__card --consecutive">
@@ -61,7 +61,7 @@
 					</div>
 					<div class="--left-content">
 						<h3 class="--red">30</h3>
-						<p>x3 win multiplier on Black Jack pro until the 6th of January!</p>
+						<p>x3 win multiplier on Black Jack Pro until the 6th of January!</p>
 					</div>
 				</div><!--/30-->
 				<div id="block-31" class="calendar__card --consecutive">
@@ -79,7 +79,7 @@
 					</div>
 					<div class="--left-content">
 						<h3 class="--red">Jan 1</h3>
-						<p>Visit this site on New years to find out our Mystery Bonus!!</p>
+						<p>Visit this site on New years to find out our Mystery Bonus!</p>
 					</div>
 				</div><!--/1-->
 				<div id="block-2" class="calendar__card --consecutive">
@@ -121,8 +121,8 @@
 		</div><!--/calendar-->
 		<div class="switcher">
 			<div class="switcher__button"></div>
-			<div class="switcher__left"><a>Consecutive</a></div>
-			<div class="switcher__right --not-active"><a>Nonconsecutive</a></div>
+			<div class="switcher__left --noselect"><a>Consecutive</a></div>
+			<div class="switcher__right --not-active --noselect"><a>Nonconsecutive</a></div>
 			
 		</div><!--/switcher-->
 
