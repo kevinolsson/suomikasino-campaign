@@ -2,12 +2,12 @@
 	<div class="hero__wrapper">
 		
 		<div class="header">
-			<h1 class="--centered">12 days of Christmas</h1>
+			<h1 class="--centered">12 days of Christmas!</h1>
 			<h4 class="--centered">Login and play from the <span class="--medium">25th of December</span> to the <span class="--medium">5th of January</span> to unlock these <span class="--medium">amazing bonuses</span>!</h4>		
 		</div><!--/header-->
 		<div class="front-page__form">
 			<input type="name" class="form__input --big --attached-left" placeholder="Enter Code Here" name="code"/>
-			<input type="button" class="form__button --big --button --attached-right" value="Redeem">
+			<input type="button" class="form__button --big --button --red --attached-right" value="Redeem">
 		</div><!--/form-->
 		<div class="calendar">	
 				<div id="block-1" class="calendar__card --consecutive">
@@ -158,6 +158,16 @@
 </div><!--/hero-2-->
 <div class="hero-3">
 	<div class="hero__wrapper">
-		<h1>hero-3</h1>
+		<div class="header">
+			<h2 class="--centered">Join Suomikasino today!</h2>
+			<h4 class="--centered">Already have an account? <a href="#" class="--medium">Login here</a></h4>
+		</div>
+	<div class="signup">
+		<form>
+			<label for="email">Email Address</label>
+			<input type="email" class="signup__email" name="email" placeholder="hello@email.com">
+			<input type="submit" class="signup__submit --button --teal">
+		</form>
+	</div>
 	</div><!--/hero__wrapper-->
 </div><!--/hero-3-->
