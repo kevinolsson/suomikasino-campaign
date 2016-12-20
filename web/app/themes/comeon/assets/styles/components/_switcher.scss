@@ -1,26 +1,57 @@
 .switcher {
-	@include media($mobile) {
+	@include span-columns(12);
+	@include media($tablet) {
 		@include span-columns(6);
 		@include shift(3);
 	}
-	@include margin(20px null 40px null);
+
+	@include margin(null null 40px null);
 	background-color: $calendar-bg;
 	border-radius: 100px;
 	color: $loafer;
-	height: 60px;
+	line-height: 60px;
 	position: relative;
 	&:hover {
 		cursor: pointer;
 	}
 
 	.switcher__left {
-		@include media($mobile) {
-			@include span-columns(3 of 6)
-		}
+		@include span-columns(3 of 6)
+		text-align: center;
+		position: relative;
+		z-index: 2;
 	}
 	.switcher__right {
-		@include media($mobile) {
-			@include span-columns(3 of 6)
+		@include span-columns(3 of 6)
+		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	.--not-active {
+		opacity: .5;
+		font-weight: 400;
+	}
+	
+
+	.switcher__button {
+		width: 50%;
+		height: 100%;
+		background-color: $well-read;
+		position: absolute;
+		top: 0px;
+		z-index: 1px;
+		border-radius: 100px;
+		transition: .3s ease;
+		margin-left: 0px;
+		&.--right {
+			margin-left: 50%;
 		}
 	}
+
+
+	// Additional layer of polish
+	@include media(max-width $mobile) {
+		font-size: modular-scale(-1);
+	}	
 }

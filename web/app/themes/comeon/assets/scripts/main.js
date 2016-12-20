@@ -10,7 +10,45 @@
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
 
+
 (function($) {
+
+function calCon() {
+  // Change description to consecutive bonuses
+  // Change necessary images
+  // Change underlines to red
+
+}
+
+function calNoncon() {
+  // Change description to nonconsecutive bonuses
+  // Change necessary images
+  // Change underlines to green
+}
+
+$(".switcher").click(function() {
+  $(".switcher__button").toggleClass( "--right" ); // have button move from left to right
+  if($('.switcher__button').hasClass("--right")) { 
+    // if --right is active, then calendar is on nonconsecutive
+    // code here will setup calendar for nonconsecutive
+    $(".switcher__left").addClass('--not-active'); // left side becomes not active
+    $(".switcher__right").removeClass('--not-active'); //right side becomes active
+
+    // call function that changes calendar to nonconsecutive
+    setTimeout(function(){calNoncon()},300);
+
+  } else {
+    // else calendar is pointing to consecutive
+    // code here will setup calendar for cosecutive
+    $(".switcher__left").removeClass('--not-active'); // left side becomes active
+    $(".switcher__right").addClass('--not-active'); //r right side becomes not active
+
+    // call function that changes calendar to consecutive
+    setTimeout(function() { calCon() },300);
+  }
+});
+
+
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.

@@ -14,7 +14,7 @@
 	background-repeat: no-repeat;
 	.hero__wrapper {
 		@include outer-container();
-		@include media(max-width $mobile) {
+		@include media(max-width $tablet) {
 			@include padding(null 20px null 20px);
 		}
 	}

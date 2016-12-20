@@ -120,8 +120,10 @@
 				</div><!--/5-->
 		</div><!--/calendar-->
 		<div class="switcher">
-			<div class="switcher__left">.left</div>
-			<div class="siwtcher__right">.right</div>
+			<div class="switcher__button"></div>
+			<div class="switcher__left"><a>Consecutive</a></div>
+			<div class="switcher__right --not-active"><a>Nonconsecutive</a></div>
+			
 		</div><!--/switcher-->
 
 
