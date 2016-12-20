@@ -19,7 +19,6 @@
 						<p>999€ Bonus Money to start of the 12 days of Christmas!</p>
 					</div>
 				</div><!--/25-->
-
 				<div id="block-26" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
@@ -29,7 +28,6 @@
 						<p>x3 win multiplier for Live Casino Holdem until the 6th of January!</p>
 					</div>
 				</div><!--/26-->
-
 				<div id="block-27" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
@@ -39,8 +37,6 @@
 						<p>100% deposit bonus until the 6th of January</p>
 					</div>
 				</div><!--/27-->
-			
-			
 				<div id="block-28" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
@@ -68,8 +64,6 @@
 						<p>x3 win multiplier on Black Jack pro until the 6th of January!</p>
 					</div>
 				</div><!--/30-->
-			
-			
 				<div id="block-31" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
@@ -97,8 +91,6 @@
 						<p>200% deposit bonus until the 6th of January</p>
 					</div>
 				</div><!--/2-->
-			
-			
 				<div id="block-3" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
@@ -126,10 +118,10 @@
 						<p>x5 win multiplier in any game for the next 24hours!</p>
 					</div>
 				</div><!--/5-->
-			
 		</div><!--/calendar-->
 		<div class="switcher">
-			hello
+			<div class="switcher__left">.left</div>
+			<div class="siwtcher__right">.right</div>
 		</div><!--/switcher-->
 
 

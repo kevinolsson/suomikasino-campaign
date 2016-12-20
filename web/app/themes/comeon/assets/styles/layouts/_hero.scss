@@ -15,7 +15,7 @@
 	.hero__wrapper {
 		@include outer-container();
 		@include media(max-width $mobile) {
-			@include padding(null 30px null 30px);
+			@include padding(null 20px null 20px);
 		}
 	}
 }
@@ -54,4 +54,14 @@
 			@include span-columns(4 of 10, $display: block-collapse);
 		}
 	}
+
+	.calendar {
+		/* moved to ../components/calendar.scss */
+		/* moved to ../components/calendar-images.scss*/
+	}
+	.switcher {
+		/* moved to ../components/switcher.scss */
+	}
 }
+
+

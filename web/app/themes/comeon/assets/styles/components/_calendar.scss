@@ -1,8 +1,12 @@
 .calendar {
 	margin-bottom: 20px;
 	@include span-columns(12);
-	@include media(min-width $mobile, max-width $tablet) {
-		@include padding(null 30px null 30px);
+
+	@include media($mobile) {
+		padding-left: $gutter/2;
+	}
+	@include media($tablet) {
+		padding-left: $gutter*1.35;
 	}
 
 	.calendar__card {

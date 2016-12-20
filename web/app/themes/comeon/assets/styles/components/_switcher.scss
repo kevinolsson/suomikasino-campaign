@@ -1,4 +1,26 @@
 .switcher {
-	@include span-columns(6);
-	@include shift(6);
+	@include media($mobile) {
+		@include span-columns(6);
+		@include shift(3);
+	}
+	@include margin(20px null 40px null);
+	background-color: $calendar-bg;
+	border-radius: 100px;
+	color: $loafer;
+	height: 60px;
+	position: relative;
+	&:hover {
+		cursor: pointer;
+	}
+
+	.switcher__left {
+		@include media($mobile) {
+			@include span-columns(3 of 6)
+		}
+	}
+	.switcher__right {
+		@include media($mobile) {
+			@include span-columns(3 of 6)
+		}
+	}
 }
