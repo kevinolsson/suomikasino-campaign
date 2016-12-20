@@ -10,24 +10,64 @@ footer {
 
 	.footer__wrapper {
 		@include outer-container();
-		@include padding(30px null 30px null);
+		@include padding(30px 20px 30px 20px);
 	}
 
 	.footer__row {
 		@include span-columns(12);
 		@include padding(10px null 10px null);
-	}
 
-	.footer__left{
-		@include span-columns(12);
-		@include media($tablet) {
-			@include span-columns(5 of 12);
+		.footer__left{
+			@include span-columns(12);
+			@include media($tablet) {
+				@include span-columns(5 of 12);
+			}
+			.footer__left--bottom {
+				@include span-columns(12);
+			}
+		}
+		.footer__right {
+			@include span-columns(12);
+			@include media($tablet) {
+				@include span-columns(7 of 12);
+			}
 		}
 	}
-	.footer__right {
-		@include span-columns(12);
-		@include media($tablet) {
-			@include span-columns(7 of 12);
+
+	// Additional elements
+	.footer__icon {
+		display: inline-block;
+		background: url(../images/spr-icons-main.png);
+		margin-right: 5px;
+
+		// modifiers
+		&.--no-spr {
+			background-image: none;
+		}
+
+		@mixin footer-sprite($width,$height,$x,$y) {
+			width: $width;
+			height: $height;
+			background-position: $x $y;
+		}		
+
+		// specific icons
+		&.--eu {
+			@include footer-sprite(48px,48px,-576px,-194px);
+		}
+		&.--age {
+			@include footer-sprite(45px,45px,-505px,-149px);
+		}
+		&.--facebook {
+			@include footer-sprite(36px,36px,-540px,-72px);
+		}
+		&.--twitter {
+			@include footer-sprite(36px,36px,-576px,-72px);
+		}
+		&.--earn {
+			@include footer-sprite(72px,20px,-433px,-148px);
+			position: relative;
+			top: 7px;
 		}
 	}
 	hr {
@@ -39,7 +79,7 @@ footer {
 		margin-bottom: 10px;
 		display: block;
 	}
-	p {
+	p,span {
 		font-size: modular-scale(-1);
 		opacity: 0.6;
 	}

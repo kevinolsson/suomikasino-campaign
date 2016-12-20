@@ -1,7 +1,8 @@
 <footer class="--shadow">
 	<div class="footer__wrapper">
-		<div class="footer__row">
-			
+		<div class="footer__row --right">
+			<div class="footer__icon --eu"></div>
+			<div class="footer__icon --age"></div>
 		<hr/>		
 		</div>
 		
@@ -17,6 +18,17 @@
 					<li><a href="#">Ehdot</a></li>
 					<li><a href="#">Rekisteriseloste</a></li>
 				</ul>
+				<div class="footer__left--bottom">
+					<span>Seuraa meitä</span><br/>
+					<div class="footer__icon --facebook"></div>
+					<div class="footer__icon --twitter"></div>
+					<div class="footer__icon --no-spr">
+						<div class="footer__icon --earn"></div>
+						<br/><span>Affiliates Earn</span>
+					</div>
+
+				</div>
+				
 			</div>
 			<div class="footer__right">
 				<strong>Suomikasino</strong>
