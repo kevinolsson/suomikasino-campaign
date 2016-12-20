@@ -1,8 +1,8 @@
 <footer class="--shadow">
 	<div class="footer__wrapper">
 		<div class="footer__row --right">
-			<div class="footer__icon --eu"></div>
-			<div class="footer__icon --age"></div>
+			<a href="https://www.suomikasino.com/tietoa-meista/"><div class="footer__icon --eu"></div></a>
+			<a href="#"><div class="footer__icon --age"></div></a>
 		<hr/>		
 		</div>
 		
@@ -20,10 +20,10 @@
 				</ul>
 				<div class="footer__left--bottom">
 					<span>Seuraa meitä</span><br/>
-					<div class="footer__icon --facebook"></div>
-					<div class="footer__icon --twitter"></div>
+					<a href="https://www.facebook.com/suomikasinocom"><div class="footer__icon --facebook"></div></a>
+					<a href="https://twitter.com/suomikasinocom"><div class="footer__icon --twitter"></div></a>
 					<div class="footer__icon --no-spr">
-						<div class="footer__icon --earn"></div>
+						<a href="http://earnaffiliates.com/"><div class="footer__icon --earn"></div></a>
 						<br/><span>Affiliates Earn</span>
 					</div>
 
