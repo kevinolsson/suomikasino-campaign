@@ -1,0 +1,58 @@
+.navigation {
+	@include padding(30px 30px null 30px);
+	@include span-columns(12);
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	color: $loafer;
+	text-align: center;
+	@include media($tablet) {
+		text-align: left;
+	}
+	
+	.navigation__logo img {
+		@include media($mobile){
+			max-width: 300px;
+		}
+		max-width: 200px;
+		height: auto;
+	}
+}
+
+.navigation__menu {
+	transition: 0.1s;
+	position: relative;
+	@include span-columns(12);
+	@include media($tablet) {
+		text-align: right;
+		top: -50px;
+	}
+	top: 15px;
+	text-align: center;
+}
+
+.navigation__menu--ul {
+	list-style: none;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	li {
+		float: left;
+		//font-weight: $bold;
+		@include padding(10px 5px 10px 5px);
+		@include media($mobile) {
+			@include padding(10px 10px 10px 10px);
+		}
+
+	}
+	li:last-child {
+		background-color: $teal;
+		border-radius: 6px;
+		margin-left: 5px;
+		@include padding(10px 10px 10px 10px);
+		@include media($mobile) {
+			@include padding(10px 25px 10px 25px);
+			argin-left: 10px;
+		}
+	}
+}

@@ -7,7 +7,7 @@
 
 
 .hero-1 {
-	@include padding(100px null null null);
+	@include padding(150px null null null);
 	background: url(../images/hero-background.jpg) $cocoa-brown no-repeat fixed;
 	background-size: cover;
 	@include hidpi(1.5) {
