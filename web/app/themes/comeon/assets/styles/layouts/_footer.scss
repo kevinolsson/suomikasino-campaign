@@ -1,5 +1,5 @@
 footer {
-	background-color: $body-bg;
+	background-color: $footer-bg;
 	color: $white;
 
 	&.--shadow {
@@ -33,7 +33,9 @@ footer {
 			}
 		}
 		&.--highlighted {
-			margin-top: 20px;
+			@include media($mobile) {
+				margin-top: 20px;
+			}
 			background-color: #212121;
 			border-radius: 6px;
 			padding: 30px;
