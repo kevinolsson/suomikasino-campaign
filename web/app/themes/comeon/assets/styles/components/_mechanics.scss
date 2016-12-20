@@ -11,11 +11,13 @@
 .mechanics {
 	.mechanics__steps {
 		@include span-columns(12);
-		@include media($mobile) {
+		@include media($tablet) {
 			@include span-columns(3 of 12);
+			@include padding(40px 20px 40px 20px);
+			@include margin(40px null 30px null);
 		}
-		@include margin(40px null 60px null);
-		@include padding(40px 20px 40px 20px);
+		position: relative;
+		padding: 20px;
 		color: $loafer;
 		text-align: center;
 

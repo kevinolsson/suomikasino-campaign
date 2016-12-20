@@ -8,14 +8,14 @@
 
 .hero-1 {
 	@include padding(100px null null null);
-	background-color: $cocoa-brown;
-	background: url(../images/hero-background.jpg);
+	background: url(../images/hero-background.jpg) $cocoa-brown no-repeat fixed;
+	background-size: cover;
 	@include hidpi(1.5) {
-		background: url(../images/hero-background@2x.jpg) no-repeat fixed;
+		background: url(../images/hero-background@2x.jpg) $cocoa-brown no-repeat fixed;
 		background-size: 100%;
 		background-size: cover;
 	}
-	background-size: cover;
+	
 	.front-page__form {
 		/* Found in ../components/_forms.scss */
 	}
@@ -29,10 +29,21 @@
 }
 
 .hero-2 {
+	/* Background has been declared in body found in ../layouts/header.scss */
 	@include padding(60px null 60px null);
 	min-height: 560px;
 	.mechanics {
 		/* Found in ../components/_mechanics.scss */
+	}
+}
+
+.hero-3 {
+	@include padding(60px null 60px null);
+	background: url(../images/hero-3-background.jpg) $cocoa-brown repeat fixed;
+	background-size: 50%;
+	@include hidpi(1.5) {
+		background: url(../images/hero-3-background@2x.jpg) $cocoa-brown repeat fixed;
+		background-size: 50%;
 	}
 }
 
