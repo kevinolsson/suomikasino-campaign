@@ -10,7 +10,7 @@
 			<input type="button" class="form__button --big --button --attached-right" value="Redeem">
 		</div><!--/form-->
 		<div class="calendar">	
-				<div id="block-25" class="calendar__card --consecutive">
+				<div id="block-1" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -19,7 +19,7 @@
 						<p>999€ Bonus Money to start of the 12 days of Christmas!</p>
 					</div>
 				</div><!--/25-->
-				<div id="block-26" class="calendar__card --consecutive">
+				<div id="block-2" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -28,7 +28,7 @@
 						<p>x3 win multiplier for Casino Holdem until the 6th of January!</p>
 					</div>
 				</div><!--/26-->
-				<div id="block-27" class="calendar__card --consecutive">
+				<div id="block-3" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -37,7 +37,7 @@
 						<p>100% deposit bonus until the 6th of January</p>
 					</div>
 				</div><!--/27-->
-				<div id="block-28" class="calendar__card --consecutive">
+				<div id="block-4" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -46,7 +46,7 @@
 						<p>x3 Free spins on Live Ruletti!</p>
 					</div>
 				</div><!--/28-->
-				<div id="block-29" class="calendar__card --consecutive">
+				<div id="block-5" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -55,7 +55,7 @@
 						<p>99 Free attempts on online slot machines!</p>
 					</div>
 				</div><!--/29-->
-				<div id="block-30" class="calendar__card --consecutive">
+				<div id="block-6" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -64,7 +64,7 @@
 						<p>x3 win multiplier on Black Jack Pro until the 6th of January!</p>
 					</div>
 				</div><!--/30-->
-				<div id="block-31" class="calendar__card --consecutive">
+				<div id="block-7" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -73,7 +73,7 @@
 						<p>Additional €999 Bonus Money to keep the party going!</p>
 					</div>
 				</div><!--/31-->
-				<div id="block-1" class="calendar__card --mystery --consecutive">
+				<div id="block-8" class="calendar__card --mystery --consecutive">
 						<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -82,7 +82,7 @@
 						<p>Visit this site on New years to find out our Mystery Bonus!</p>
 					</div>
 				</div><!--/1-->
-				<div id="block-2" class="calendar__card --consecutive">
+				<div id="block-9" class="calendar__card --consecutive">
 						<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -91,7 +91,7 @@
 						<p>200% deposit bonus until the 6th of January</p>
 					</div>
 				</div><!--/2-->
-				<div id="block-3" class="calendar__card --consecutive">
+				<div id="block-10" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -100,7 +100,7 @@
 						<p>99 Free scratches in Scratch ahoy! </p>
 					</div>
 				</div><!--/3-->
-				<div id="block-4" class="calendar__card --consecutive">
+				<div id="block-11" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>
@@ -109,7 +109,7 @@
 						<p>4 Free attempts in Mega Fortune!</p>
 					</div>
 				</div><!--/4-->
-				<div id="block-5" class="calendar__card --consecutive">
+				<div id="block-12" class="calendar__card --consecutive">
 					<div class="--right-content">
 						<div class="calendar__card__image"></div>
 					</div>

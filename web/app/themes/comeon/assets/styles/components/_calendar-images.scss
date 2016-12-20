@@ -17,25 +17,25 @@
 	transition: 0s;
 }
 
-#block-25 {
+#block-1 {
 	.calendar__card__image {
 		@include calendar-image(0px, 0px);
 	}
 }
 
-#block-26 {
+#block-2 {
 	.calendar__card__image {
 		@include calendar-image(-100px, 0px);
 	}
 }
 
-#block-27 {
+#block-3 {
 	.calendar__card__image {
 		@include calendar-image(-200px, 0px);
 	}
 }
 
-#block-28 {
+#block-4 {
 	&.--non-consecutive {
 		.calendar__card__image {
 			@include calendar-image(-300px, 0px);
@@ -48,19 +48,19 @@
 	}
 }
 
-#block-29 {
+#block-5 {
 	.calendar__card__image {
 		@include calendar-image(-500px, 0px);
 	}
 }
 
-#block-30 {
+#block-6 {
 	.calendar__card__image {
 		@include calendar-image(-600px, 0px);
 	}
 }
 
-#block-31 {
+#block-7 {
 	&.--non-consecutive {
 		.calendar__card__image {
 			@include calendar-image(-700px, 0px);
@@ -73,13 +73,13 @@
 	}
 }
 
-#block-1 {
+#block-8 {
 	.calendar__card__image {
 		@include calendar-image(-900px, 0px);
 	}
 }
 
-#block-2 {
+#block-9 {
 	&.--non-consecutive {
 		.calendar__card__image {
 			@include calendar-image(0px, -100px);
@@ -92,7 +92,7 @@
 	}
 }
 
-#block-3 {
+#block-10 {
 	&.--non-consecutive {
 		.calendar__card__image {
 			@include calendar-image(-200px, -100px);
@@ -105,7 +105,7 @@
 	}
 }
 
-#block-4 {
+#block-11 {
 	&.--non-consecutive {
 		.calendar__card__image {
 			@include calendar-image(-400px, -100px);
@@ -118,7 +118,7 @@
 	}
 }
 
-#block-5 {
+#block-12 {
 	.calendar__card__image {
 		@include calendar-image(-600px, -100px);
 	}
