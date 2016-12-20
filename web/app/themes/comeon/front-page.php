@@ -1,11 +1,11 @@
-<div class="hero">
+<div class="hero-1">
 	<div class="hero__wrapper">
 		
 		<div class="header">
 			<h1 class="--centered">12 days of Christmas</h1>
 			<h4 class="--centered">Login and play from the <span class="--medium">25th of December</span> to the <span class="--medium">5th of January</span> to unlock these <span class="--medium">amazing bonuses</span>!</h4>		
 		</div><!--/header-->
-		<div class="form">
+		<div class="front-page__form">
 			<input type="name" class="form__input --big --attached-left" placeholder="Enter Code Here" name="code"/>
 			<input type="button" class="form__button --big --button --attached-right" value="Redeem">
 		</div><!--/form-->
@@ -128,7 +128,36 @@
 		<div class="post-switcher">
 			<a href="#">What's the difference between Consecutive and Nonconsecutive Bonuses?</a>
 		</div>
-
-
 	</div><!--/hero__wrapper-->
 </div><!--/hero-->
+<div class="hero-2">
+	<div class="hero__wrapper">
+		<div class="header">
+			<h2 class="--centered">How to Join</h2>
+			<h4 class="--centered">Participating is as easy as <span class="--1medium">following these 4 steps!</span></h4>
+		</div>
+		<div class="mechanics">
+			<div class="mechanics__steps">
+				<div class="mechanics__steps__image"></div>
+				<h5>Login and Play during the 12 days of Christmas</h5>
+			</div>
+			<div class="mechanics__steps">
+				<div class="mechanics__steps__image"></div>
+				<h5>A code will be sent to your phone via SMS</h5>
+			</div>
+			<div class="mechanics__steps">
+				<div class="mechanics__steps__image"></div>
+				<h5>Use that code to redeem your bonus!</h5>
+			</div>
+			<div class="mechanics__steps">
+				<div class="mechanics__steps__image"></div>
+				<h5>Login and play for consecutive days to get bigger bonuses!</h5>
+			</div>
+		</div><!--/mechanics-->
+	</div><!--/hero__wrapper-->
+</div><!--/hero-2-->
+<div class="hero-3">
+	<div class="hero__wrapper">
+		<h1>hero-3</h1>
+	</div><!--/hero__wrapper-->
+</div><!--/hero-3-->

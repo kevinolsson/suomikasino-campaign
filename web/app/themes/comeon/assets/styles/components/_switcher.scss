@@ -29,7 +29,7 @@
 
 	.--not-active {
 		opacity: .5;
-		font-weight: 400;
+		font-weight: $regular;
 	}
 	
 
@@ -58,7 +58,9 @@
 
 .post-switcher {
 	@include span-columns(12);
-	@include margin(null null 40px null);
+	@include margin(null null 60px null);
 	text-align: center;
 	font-size: modular-scale(-1);
+	text-decoration: underline;
+	font-weight: $regular;
 }

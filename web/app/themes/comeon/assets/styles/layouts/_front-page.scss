@@ -1,0 +1,56 @@
+.hero__wrapper {
+	@include outer-container();
+	@include media(max-width $tablet) {
+		@include padding(null 20px null 20px);
+	}
+}
+
+
+.hero-1 {
+	@include padding(100px null null null);
+	background-color: $cocoa-brown;
+	background: url(../images/hero-background.jpg);
+	@include hidpi(1.5) {
+		background: url(../images/hero-background@2x.jpg) no-repeat fixed;
+		background-size: 100%;
+		background-size: cover;
+	}
+	background-size: cover;
+	.front-page__form {
+		/* Found in ../components/_forms.scss */
+	}
+	.calendar{
+		/* Found in ../components/_calendar.scss
+						../components/_calendar-images.scss */
+	}
+	.switcher {
+		/* Found in ../components/_switcher.scss */
+	}
+}
+
+.hero-2 {
+	@include padding(60px null 60px null);
+	min-height: 560px;
+	.mechanics {
+		/* Found in ../components/_mechanics.scss */
+	}
+}
+
+.header {
+	@include span-columns(12);
+	h4 {
+		@include media($mobile) {
+			@include span-columns(10 of 12);
+			@include shift(1);
+		}
+	}
+	.--centered {
+		text-align: center;
+	}
+	.--medium {
+		font-weight: $medium;
+	}
+}
+
+
+
