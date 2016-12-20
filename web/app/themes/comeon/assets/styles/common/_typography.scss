@@ -76,7 +76,7 @@ small {
 
 a {
 	// All links are Roboto Slab
-	font-family: $roboto-slab-stack !important;
+	font-family: $roboto-slab-stack;
 	color: $loafer;
 	&:hover {
 		color: darken($loafer,5%);

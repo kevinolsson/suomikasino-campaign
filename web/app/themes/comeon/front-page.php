@@ -142,10 +142,12 @@
 			<div class="mechanics__steps">
 				<div class="mechanics__steps__image"></div>
 				<h5>Login and Play during the 12 days of Christmas</h5>
+				<div class="--arrow"></div>
 			</div>
 			<div class="mechanics__steps">
 				<div class="mechanics__steps__image"></div>
-				<h5>A code will be sent to your phone via SMS</h5>
+				<h5>A code will be sent to your phone via SMS</h5
+				<div class="--arrow"></div>>
 			</div>
 			<div class="mechanics__steps">
 				<div class="mechanics__steps__image"></div>

@@ -63,4 +63,7 @@
 	font-size: modular-scale(-1);
 	text-decoration: underline;
 	font-weight: $regular;
+	a {
+		font-family: $roboto-stack;
+	}
 }
