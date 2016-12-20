@@ -32,6 +32,18 @@ footer {
 				@include span-columns(7 of 12);
 			}
 		}
+		&.--highlighted {
+			margin-top: 20px;
+			background-color: #212121;
+			border-radius: 6px;
+			padding: 30px;
+		}
+		.footer__fineprint {
+			font-size: modular-scale(-2);
+			line-height: 1.4;
+			opacity: 0.5;
+			display: inline-block;
+		}
 	}
 
 	// Additional elements
@@ -69,7 +81,14 @@ footer {
 			position: relative;
 			top: 7px;
 		}
+		&.--mga {
+			@include footer-sprite(145px,45px,-766px,-141px);
+		}
+		&.--license {
+			@include footer-sprite(24px,45px,-940px,-148px);
+		}
 	}
+
 	hr {
 		border-color: $loafer;
 		opacity: 0.2;
