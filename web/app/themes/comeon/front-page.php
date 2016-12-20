@@ -117,15 +117,17 @@
 						<h3 class="--red">5</h3>
 						<p>x5 win multiplier in any game for the next 24hours!</p>
 					</div>
-				</div><!--/5-->
+				</div>
+				<!--/5-->
 		</div><!--/calendar-->
 		<div class="switcher">
 			<div class="switcher__button"></div>
 			<div class="switcher__left --noselect"><a>Consecutive</a></div>
 			<div class="switcher__right --not-active --noselect"><a>Nonconsecutive</a></div>
-			
 		</div><!--/switcher-->
-
+		<div class="post-switcher">
+			<a href="#">What's the difference between Consecutive and Nonconsecutive Bonuses?</a>
+		</div>
 
 
 	</div><!--/hero__wrapper-->

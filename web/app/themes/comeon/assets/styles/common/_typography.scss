@@ -78,6 +78,10 @@ a {
 	// All links are Roboto Slab
 	font-family: $roboto-slab-stack !important;
 	color: $loafer;
+	&:hover {
+		color: darken($loafer,5%);
+		text-decoration: none;
+	}
 }
 
 .--noselect {

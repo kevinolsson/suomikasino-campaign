@@ -4,8 +4,7 @@
 		@include span-columns(6);
 		@include shift(3);
 	}
-
-	@include margin(null null 40px null);
+	@include margin(null null 10px null);
 	background-color: $calendar-bg;
 	border-radius: 100px;
 	color: $loafer;
@@ -55,4 +54,11 @@
 	@include media(max-width $mobile) {
 		font-size: modular-scale(-1);
 	}	
+}
+
+.post-switcher {
+	@include span-columns(12);
+	@include margin(null null 40px null);
+	text-align: center;
+	font-size: modular-scale(-1);
 }
