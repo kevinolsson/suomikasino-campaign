@@ -8,7 +8,7 @@
 		<div class="front-page__form">
 			<form action="#" method="POST">
 				<input type="name" required class="form__input --big --attached-left" placeholder="Enter Code Here" name="code"/>
-				<input type="button" class="form__button --big --button --red --attached-right" value="Redeem">
+				<input type="submit" class="form__button --big --button --red --attached-right" value="Redeem">
 			</form>
 		</div><!--/form-->
 		<div class="calendar">	
