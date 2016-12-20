@@ -54,7 +54,7 @@ Make sure all dependencies have been installed before moving on:
 $ honcho start -f Procfile.dev
 ```
 
-Finally, you might need to open a new tab:
+A new tab will open with an address pointed to `http://0.0.0.0:3000`. change it to
 ```
 http://0.0.0.0:8000
 ```
