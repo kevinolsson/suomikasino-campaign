@@ -38,21 +38,26 @@
 	margin: 0px;
 	li {
 		float: left;
-		//font-weight: $bold;
-		@include padding(10px 5px 10px 5px);
-		@include media($mobile) {
-			@include padding(10px 10px 10px 10px);
+		a {	
+			display: inline-block;
+			@include padding(10px 5px 10px 5px);
+			@include media($mobile) {
+				@include padding(10px 10px 10px 10px);
+			}
 		}
-
 	}
 	li:last-child {
 		background-color: $teal;
 		border-radius: 6px;
 		margin-left: 5px;
-		@include padding(10px 10px 10px 10px);
-		@include media($mobile) {
-			@include padding(10px 25px 10px 25px);
-			argin-left: 10px;
+		&:hover {
+			background-color: darken($teal,5%);
+		}
+		a {
+			@include padding(10px 10px 10px 10px);
+			@include media($mobile) {
+				@include padding(10px 25px 10px 25px);
+			}
 		}
 	}
 }

@@ -53,6 +53,9 @@ footer {
 		display: inline-block;
 		background: url(../images/spr-icons-main.png);
 		margin-right: 5px;
+		&:hover {
+			opacity: 0.9;
+		}
 
 		// modifiers
 		&.--no-spr {

@@ -47,12 +47,20 @@ input {
 		font-family: $roboto-slab-stack;
 		color: $loafer;
 	}
+	
 	&.--red {
 		background-color: $well-read;
+		&:hover {
+			background-color: darken($well-read,5%);
+		}
 	}
 	&.--teal {
 		background-color: $teal;
+		&:hover {
+			background-color: darken($teal,5%);
+		}
 	}
+
 	&.--big {
 		height: 60px;
 	}

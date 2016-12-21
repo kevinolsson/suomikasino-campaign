@@ -6,10 +6,8 @@
 			<h4 class="--centered">Login and play from the <span class="--medium">25th of December</span> to the <span class="--medium">5th of January</span> to unlock these <span class="--medium">amazing bonuses</span>!</h4>		
 		</div><!--/header-->
 		<div class="front-page__form">
-			<form action="#" method="POST">
-				<input type="name" required class="form__input --big --attached-left" placeholder="Enter Code Here" name="code"/>
+				<input type="name" class="form__input --big --attached-left" placeholder="Enter Code Here" name="code"/>
 				<input type="submit" class="form__button --big --button --red --attached-right" value="Redeem">
-			</form>
 		</div><!--/form-->
 		<div class="calendar">	
 				<div id="block-1" class="calendar__card --consecutive">
@@ -160,7 +158,7 @@
 		</div><!--/mechanics-->
 	</div><!--/hero__wrapper-->
 </div><!--/hero-2-->
-<div class="hero-3">
+<div id="signup" class="hero-3">
 	<div class="hero__wrapper">
 		<div class="header">
 			<h2 class="--centered">Join Suomikasino today!</h2>

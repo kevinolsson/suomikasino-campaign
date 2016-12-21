@@ -82,6 +82,10 @@ a {
 		color: darken($loafer,5%);
 		text-decoration: none;
 	}
+	&:active, &:visited, &:link {
+		color: $loafer;
+		text-decoration: none;
+	}
 }
 
 .--noselect {
