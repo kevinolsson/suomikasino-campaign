@@ -32,16 +32,19 @@
 		animation: panning 100s infinite linear;
 		background-size: 150%;
 		text-align: center;
+  		color: $loafer;
+		border-radius: 16px;
+		box-shadow: 0 2px 7px 0 rgba(0,0,0,0.10);
+		@include padding(10% 5% 10% 5%);
+		position: relative;
+		z-index: 10;
 		@include media($tablet) {
 			background: url(../images/modal_background-image@2x.jpg);
 			background-size: 150%;
 			animation: panning 100s infinite linear;
 			min-height: 560px;
 		}
-  		color: $loafer;
-		border-radius: 16px;
-		box-shadow: 0 2px 7px 0 rgba(0,0,0,0.10);
-		@include padding(10% 5% 10% 5%);
+
 
 		.modal__button {
 			border-radius: 6px;

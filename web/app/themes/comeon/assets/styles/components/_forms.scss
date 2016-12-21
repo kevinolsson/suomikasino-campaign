@@ -67,6 +67,7 @@ input {
 
 	&.--attached-left {
 		border-radius: 6px 6px 0px 0px;
+		margin-bottom: 0px;
 		//Its assumed that the left value will be on top
 		@include media($mobile) {
 			border-radius: 6px 0px 0px 6px;
