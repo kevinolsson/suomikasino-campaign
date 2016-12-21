@@ -6,6 +6,8 @@
 	z-index: 5;
 	top: 0px;
 	left: 0px;
+	// display: none;
+	// opacity: 0;
 }
 
 .modal__wrapper {
@@ -38,12 +40,17 @@
 			background-color: $teal;
 			@include media($mobile) {
 				width: 300px;
+				margin-top: 20px;
 			}
 			font-size: modular-scale(1);
 			width: 100%;
 			display: inline-block;
 			text-align: center;
 			line-height: 60px;
+			&:hover {
+				background-color: darken($teal,5%);
+				cursor: pointer;
+			}
 		}
 
 		h1 {

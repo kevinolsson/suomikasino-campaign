@@ -11,9 +11,9 @@
  * ======================================================================== */
 
 
-(function($) {
+ (function($) {
 
-function calCon() {
+  function calCon() {
   // Change description to consecutive bonuses
     //25
     $( "#block-1" ).find( "p").text("999€ Bonus Money to start of the 12 days of Christmas!");
@@ -89,6 +89,7 @@ function calNoncon() {
   $( ".--red" ).addClass("--green").removeClass("--red");
 }
 
+// Calendar bonus switcher
 $(".switcher").click(function() {
   $(".switcher__button").toggleClass( "--right" ); // have button move from left to right
   if($('.switcher__button').hasClass("--right")) { 
@@ -109,6 +110,24 @@ $(".switcher").click(function() {
     // call function that changes calendar to consecutive
     setTimeout(function(){calCon();},100);
   }
+});
+
+// Show the modal
+$(".form__button").click(function() {
+  // display block, before fading in to avoid jutters
+  $(".modal__background").css("display","block");
+  setTimeout(function(){
+    $(".modal__background").css("opacity","100");
+  },250);
+});
+
+
+// Hiding the Modal
+$(".modal__button").click(function() {
+  $(".modal__background").css("opacity","0");
+  setTimeout(function(){
+    $(".modal__background").css("display","none");
+  },250);
 });
 
 $(function() {
