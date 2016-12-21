@@ -17,6 +17,14 @@
 	}
 	@include outer-container();
 	@include padding(null 20px null 20px);
+	color: $loafer;
+	text-align: center;
+	p {
+		opacity: 0.3;
+		margin-top: 20px;
+		position: relative;
+		top: 20px;
+	}
 
 	.modal__ {
 		@include span-columns(12);

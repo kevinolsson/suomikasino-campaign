@@ -1,12 +1,15 @@
 <div class="modal__background">
 	<div class="modal__wrapper">
+
 		<div class="modal__">
 			<div class="header">
 				<h4 class="--centered">On the 1st day of Christmas Suomikasino gave to me</h4>
 				<h1 class="--centered">€999 Bonus Money to get started!</h1>
+
 			</div>
 			<a class="modal__button">Continue</a>
 		</div>
+		<p>Promo Code entered accepted! Your bonus has been added/applied to your account!</p>
 	</div>
 </div>
 <div class="hero-1">
