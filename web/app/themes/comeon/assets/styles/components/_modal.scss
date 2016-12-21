@@ -10,19 +10,51 @@
 
 .modal__wrapper {
 	margin-top: 8%;
+	@include media(max-width $mobile) {
+		margin-top: 16%;
+	}
 	@include outer-container();
+	@include padding(null 20px null 20px);
+
 	.modal__ {
 		@include span-columns(12);
-		background: url(../images/modal_background-image@2x.jpg);
-  		background-size: 150%;
-  		animation: panning 100s infinite linear;
-		color: $loafer;
-		min-height: 560px;
+		background: url(../images/modal_background-image--mobile@2x.jpg);
+		animation: panning 100s infinite linear;
+		background-size: 150%;
+		text-align: center;
+		@include media($tablet) {
+			background: url(../images/modal_background-image@2x.jpg);
+			background-size: 150%;
+			animation: panning 100s infinite linear;
+			min-height: 560px;
+		}
+  		color: $loafer;
 		border-radius: 16px;
 		box-shadow: 0 2px 7px 0 rgba(0,0,0,0.10);
+		@include padding(10% 5% 10% 5%);
+
+		.modal__button {
+			border-radius: 6px;
+			background-color: $teal;
+			@include media($mobile) {
+				width: 300px;
+			}
+			font-size: modular-scale(1);
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			line-height: 60px;
+		}
+
+		h1 {
+			@include media(max-width $mobile) {
+				font-size: modular-scale(3);
+			}
+		}
 	}
 }
 
+/* For panning background-image on __modal */
 @keyframes panning {
   0% {
     background-position: 0% 0%;
