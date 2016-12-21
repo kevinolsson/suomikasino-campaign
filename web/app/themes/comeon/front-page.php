@@ -1,3 +1,10 @@
+<div class="modal__background">
+	<div class="modal__wrapper">
+		<div class="modal__">
+			Hello
+		</div>
+	</div>
+</div>
 <div class="hero-1">
 	<div class="hero__wrapper">
 		
