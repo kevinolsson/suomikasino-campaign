@@ -48,7 +48,7 @@
   }
 
   // Change underlines to red
-  $( ".--green" ).addClass("--red").removeClass("--green");
+  //$( ".--green" ).addClass("--red-underline").removeClass("--green-underline");
 
 }
 
@@ -86,7 +86,7 @@ function calNoncon() {
   }
 
   // Change underlines to green
-  $( ".--red" ).addClass("--green").removeClass("--red");
+  //$( ".--red" ).addClass("--green-underline").removeClass("--red-underline");
 }
 
 // Calendar bonus switcher

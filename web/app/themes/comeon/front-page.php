@@ -29,7 +29,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">25</h3>
+						<h3>25</h3>
 						<p>999€ Bonus Money to start of the 12 days of Christmas!</p>
 					</div>
 				</div><!--/25-->
@@ -38,7 +38,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">26</h3>
+						<h3>26</h3>
 						<p>x3 win multiplier for Casino Holdem until the 6th of January!</p>
 					</div>
 				</div><!--/26-->
@@ -47,7 +47,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">27</h3>
+						<h3>27</h3>
 						<p>100% deposit bonus until the 6th of January</p>
 					</div>
 				</div><!--/27-->
@@ -56,7 +56,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">28</h3>
+						<h3>28</h3>
 						<p>x3 Free spins on Live Ruletti!</p>
 					</div>
 				</div><!--/28-->
@@ -65,7 +65,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">29</h3>
+						<h3>29</h3>
 						<p>99 Free attempts on online slot machines!</p>
 					</div>
 				</div><!--/29-->
@@ -74,7 +74,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">30</h3>
+						<h3>30</h3>
 						<p>x3 win multiplier on Black Jack Pro until the 6th of January!</p>
 					</div>
 				</div><!--/30-->
@@ -83,7 +83,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">31</h3>
+						<h3>31</h3>
 						<p>Additional €999 Bonus Money to keep the party going!</p>
 					</div>
 				</div><!--/31-->
@@ -92,7 +92,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">Jan 1</h3>
+						<h3>Jan 1</h3>
 						<p>Visit this site on New years to find out our Mystery Bonus!</p>
 					</div>
 				</div><!--/1-->
@@ -101,7 +101,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">2</h3>
+						<h3>2</h3>
 						<p>200% deposit bonus until the 6th of January</p>
 					</div>
 				</div><!--/2-->
@@ -110,7 +110,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">3</h3>
+						<h3>3</h3>
 						<p>99 Free scratches in Scratch ahoy! </p>
 					</div>
 				</div><!--/3-->
@@ -119,7 +119,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">4</h3>
+						<h3>4</h3>
 						<p>4 Free attempts in Mega Fortune!</p>
 					</div>
 				</div><!--/4-->
@@ -128,7 +128,7 @@
 						<div class="calendar__card__image"></div>
 					</div>
 					<div class="--left-content">
-						<h3 class="--red">5</h3>
+						<h3>5</h3>
 						<p>x5 win multiplier in any game for the next 24hours!</p>
 					</div>
 				</div>

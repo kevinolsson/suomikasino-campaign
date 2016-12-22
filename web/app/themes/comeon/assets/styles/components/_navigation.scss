@@ -9,7 +9,11 @@
 	@include media($tablet) {
 		text-align: left;
 	}
-	
+	.navigation__logo {
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+	}
 	.navigation__logo img {
 		@include media($mobile){
 			max-width: 300px;

@@ -1,0 +1,23 @@
+.pages__wrapper {
+	@include outer-container();
+	@include padding(150px 20px 60px 20px);
+}
+
+.pages {
+	@include span-columns(12);
+	@include media($tablet) {
+		@include span-columns(8);
+		@include shift(2);
+	}
+	@include padding(30px 30px 60px 30px);
+	background-color: $loafer;
+	border-radius: $border-radius;
+	color: $cocoa-brown;
+	h1, h2, h3, h4, h5, h6{
+		color: $well-read;
+	}
+}
+
+.page-header {
+	margin-bottom: 20px;
+}

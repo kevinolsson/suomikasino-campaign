@@ -29,7 +29,7 @@
 		padding: 20px;
 		min-height: 200px;
 		
-		// content
+		// calendar__card content
 		@include direction-context(right-to-left) {
 			.--left-content {
 				@include media($tablet) {
@@ -47,18 +47,22 @@
 			}
 		}
 
-		// Calendar Number
+		// calendar__card h3
 		h3 {
 			display: inline-block;
-			&.--green {
-				border-bottom: 5px solid $teal;
-			}
-			&.--red {
+		}
+		&.--consecutive {
+			h3 {
 				border-bottom: 5px solid $well-read;
 			}
 		}
+		&.--non-consecutive {
+			h3 {
+				border-bottom: 5px solid $teal;
+			}
+		}
 
-		// modifiers
+		// calendar__card modifiers
 		&.--mystery {
 			background-color: $newyear-bg;
 		}
