@@ -118,7 +118,7 @@ $(".form__button").click(function() {
   $(".modal__background").css("display","block");
   setTimeout(function(){
     $(".modal__background").css("opacity","100");
-  },250);
+  },10);
 });
 
 
@@ -127,7 +127,7 @@ $(".modal__button").click(function() {
   $(".modal__background").css("opacity","0");
   setTimeout(function(){
     $(".modal__background").css("display","none");
-  },250);
+  },10);
 });
 
 $(function() {
