@@ -1,4 +1,4 @@
-<div class="pages__wrapper">
+<div class="pages__wrapper --posts">
   <div class="pages">
     <div class="pages__content">
 
