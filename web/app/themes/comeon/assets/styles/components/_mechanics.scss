@@ -40,7 +40,7 @@
 		}
 		&:nth-child(4) {
 			background-color: $mechanic-bg;
-			border-radius: 6px;
+			border-radius: $border-radius;
 			.mechanics__steps__image {
 				@include mechanic-steps-image(-345px);
 			}

@@ -13,6 +13,7 @@
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
+// General
 @import "common/typography";
 @import "components/comments";
 @import "components/buttons";
@@ -21,14 +22,18 @@
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
-@import "layouts/pages";
+@import "layouts/page";
 @import "layouts/posts";
 @import "layouts/tinymce";
-
 @import "components/navigation";
+
+// Front Page
 @import "layouts/front-page";
 @import "components/calendar";
 @import "components/calendar-images";
 @import "components/switcher";
 @import "components/mechanics";
 @import "components/modal";
+
+// Pages with dedicated scss
+@import "layouts/page-login";

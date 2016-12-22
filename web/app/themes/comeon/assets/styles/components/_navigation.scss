@@ -52,7 +52,7 @@
 	}
 	li:last-child {
 		background-color: $teal;
-		border-radius: 6px;
+		border-radius: $border-radius;
 		margin-left: 5px;
 		&:hover {
 			background-color: darken($teal,5%);

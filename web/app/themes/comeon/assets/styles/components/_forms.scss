@@ -39,7 +39,7 @@ input {
 	-webkit-appearance: none;
 	@include padding(null 15px null 15px);
 	margin-bottom: 15px;
-	border-radius: 6px;
+	border-radius: $border-radius;
 	@include fill-parent;
 
 	// modifiers
@@ -66,17 +66,17 @@ input {
 	}
 
 	&.--attached-left {
-		border-radius: 6px 6px 0px 0px;
+		border-radius: $border-radius $border-radius 0px 0px;
 		margin-bottom: 0px;
 		//Its assumed that the left value will be on top
 		@include media($mobile) {
-			border-radius: 6px 0px 0px 6px;
+			border-radius: $border-radius 0px 0px $border-radius;
 		}
 	}
 	&.--attached-right {
-		border-radius: 0px 0px 6px 6px;
+		border-radius: 0px 0px $border-radius $border-radius;
 		@include media($mobile) {
-			border-radius: 0px 6px 6px 0px;
+			border-radius: 0px $border-radius $border-radius 0px;
 		}
 	}
 }

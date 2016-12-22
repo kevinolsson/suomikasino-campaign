@@ -33,7 +33,7 @@
 		background-size: 150%;
 		text-align: center;
   		color: $loafer;
-		border-radius: 16px;
+		border-radius: $border-radius*3;
 		box-shadow: 0 2px 7px 0 rgba(0,0,0,0.10);
 		@include padding(10% 5% 10% 5%);
 		position: relative;
@@ -47,7 +47,7 @@
 
 
 		.modal__button {
-			border-radius: 6px;
+			border-radius: $border-radius;
 			background-color: $teal;
 			@include media($mobile) {
 				width: 300px;
