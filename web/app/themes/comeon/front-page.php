@@ -3,8 +3,8 @@
 
 		<div class="modal__">
 			<div class="header">
-				<h4 class="--centered">On the 1st day of Christmas Suomikasino gave to me</h4>
-				<h1 class="--centered">€999 Bonus Money to get started!</h1>
+				<h4 class="header--centered">On the 1st day of Christmas Suomikasino gave to me</h4>
+				<h1 class="header--centered">€999 Bonus Money to get started!</h1>
 
 			</div>
 			<a class="modal__button">Continue</a>
@@ -16,8 +16,8 @@
 	<div class="hero__wrapper">
 		
 		<div class="header">
-			<h1 class="--centered">12 days of Christmas!</h1>
-			<h4 class="--centered">Login and play from the <span class="--medium">25th of December</span> to the <span class="--medium">5th of January</span> to unlock these <span class="--medium">amazing bonuses</span>!</h4>		
+			<h1 class="header--centered">12 days of Christmas!</h1>
+			<h4 class="header--centered">Login and play from the <span class="--medium">25th of December</span> to the <span class="--medium">5th of January</span> to unlock these <span class="--medium">amazing bonuses</span>!</h4>		
 		</div><!--/header-->
 		<div class="front-page__form">
 				<input type="name" class="form__input --big --attached-left" placeholder="Enter Code Here" name="code"/>

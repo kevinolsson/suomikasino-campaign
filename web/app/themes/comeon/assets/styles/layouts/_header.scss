@@ -1,4 +1,5 @@
 body {
+
 	background: url(../images/hero-2-background.png) $body-bg repeat 0 2px fixed;
 	@include media(max-width $mobile) {
 		margin-top: -20px;

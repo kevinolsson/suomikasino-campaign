@@ -57,10 +57,10 @@
 			@include shift(1);
 		}
 	}
-	.--centered {
+	@at-root #{&}--centered {
 		text-align: center;
 	}
-	.--medium {
+	@at-root #{&}--medium {
 		font-weight: $medium;
 	}
 	a {
