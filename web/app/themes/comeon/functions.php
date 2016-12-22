@@ -26,3 +26,10 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+add_filter( 'get_the_archive_title', 'remove_category_word_from_archive_title' );
+
+function remove_category_word_from_archive_title( $title ) {
+    $title = str_replace( 'Category:', '', $title );
+    return $title;
+}

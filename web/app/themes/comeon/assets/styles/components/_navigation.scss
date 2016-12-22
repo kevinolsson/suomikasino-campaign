@@ -64,4 +64,9 @@
 			}
 		}
 	}
+	
+	//additional layer of polish
+	@include media(max-width 350px) {
+		font-size: modular-scale(-1);
+	}
 }
