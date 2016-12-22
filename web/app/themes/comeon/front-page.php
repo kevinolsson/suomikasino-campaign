@@ -140,7 +140,7 @@
 			<div class="switcher__right --not-active --noselect"><a>Nonconsecutive</a></div>
 		</div><!--/switcher-->
 		<div class="post-switcher">
-			<a href="#">What's the difference between Consecutive and Nonconsecutive Bonuses?</a>
+			<a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">What's the difference between Consecutive and Nonconsecutive Bonuses?</a>
 		</div>
 	</div><!--/hero__wrapper-->
 </div><!--/hero-->
