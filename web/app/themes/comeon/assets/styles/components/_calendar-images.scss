@@ -1,125 +1,34 @@
-@mixin calendar-image($x, $y){
+@mixin calendar-sprite($x, $y) {
+	background: url(../images/calendar_icons.png);
+	background-position: $x $y;
+	width: 100px;
+	height: 100px;
+	background-size: 1000px;
+	margin: 0 auto;
+	transition: 0s;
 	@include hidpi(1.5) {
 		background: url(../images/calendar_icons@2x.png);
 		background-position: $x $y;
 		background-size: 1000px;
-		/* For some odd reason; I have to redeclare a few
-			lines of SaSS when using the @include hidpi() function.
-
-		*/
-	}
-	width: 100px;
-	height: 100px;
-	background: url(../images/calendar_icons.png);
-	background-position: $x $y;
-	background-size: 1000px;
-	margin: 0 auto;
-	transition: 0s;
-}
-
-#block-1 {
-	.calendar__card__image {
-		@include calendar-image(0px, 0px);
+		/* For some odd reason; I have to redeclare a few lines of Sass when using the @include hidpi() function. */
 	}
 }
 
-#block-2 {
-	.calendar__card__image {
-		@include calendar-image(-100px, 0px);
-	}
-}
-
-#block-3 {
-	.calendar__card__image {
-		@include calendar-image(-200px, 0px);
-	}
-}
-
-#block-4 {
-	&.--non-consecutive {
-		.calendar__card__image {
-			@include calendar-image(-300px, 0px);
+.calendar {
+	@for $i from 0 through 11 {
+		&__card--consecutive {
+			&#block-#{$i+1} {
+				.calendar__card__image {
+					@include calendar-sprite($i*100px,0px);
+				}
+			}
 		}
-	}
-	&.--consecutive {
-		.calendar__card__image {
-			@include calendar-image(-400px, 0px);
+		&__card--nonconsecutive {
+			&#block-#{$i+1} {
+				.calendar__card__image {
+					@include calendar-sprite($i*100px,100px);
+				}
+			}
 		}
-	}
-}
-
-#block-5 {
-	.calendar__card__image {
-		@include calendar-image(-500px, 0px);
-	}
-}
-
-#block-6 {
-	.calendar__card__image {
-		@include calendar-image(-600px, 0px);
-	}
-}
-
-#block-7 {
-	&.--non-consecutive {
-		.calendar__card__image {
-			@include calendar-image(-700px, 0px);
-		}
-	}
-	&.--consecutive {
-		.calendar__card__image {
-			@include calendar-image(-800px, 0px);
-		}
-	}
-}
-
-#block-8 {
-	.calendar__card__image {
-		@include calendar-image(-900px, 0px);
-	}
-}
-
-#block-9 {
-	&.--non-consecutive {
-		.calendar__card__image {
-			@include calendar-image(0px, -100px);
-		}
-	}
-	&.--consecutive {
-		.calendar__card__image {
-			@include calendar-image(-100px, -100px);
-		}
-	}
-}
-
-#block-10 {
-	&.--non-consecutive {
-		.calendar__card__image {
-			@include calendar-image(-200px, -100px);
-		}
-	}
-	&.--consecutive {
-		.calendar__card__image {
-			@include calendar-image(-300px, -100px);
-		}
-	}
-}
-
-#block-11 {
-	&.--non-consecutive {
-		.calendar__card__image {
-			@include calendar-image(-400px, -100px);
-		}
-	}
-	&.--consecutive {
-		.calendar__card__image {
-			@include calendar-image(-500px, -100px);
-		}
-	}
-}
-
-#block-12 {
-	.calendar__card__image {
-		@include calendar-image(-600px, -100px);
 	}
 }
