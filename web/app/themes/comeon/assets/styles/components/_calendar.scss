@@ -17,6 +17,7 @@
 		background-color: $calendar-bg;
 		color: $loafer;
 		padding: 20px;
+		height: 280px;
 		@include span-columns(6 of 12);
 		@include margin(null 1px 2px 1px);
 		@include media($tablet) {
@@ -26,20 +27,32 @@
 			margin-right: 0px;
 			height: 200px;
 		}
+		@include media(min-width $mobile max-width $tablet) {
+			height: 260px;
+		}
 
 		@include direction-context(right-to-left) {
 			/* .calendar__card__left */
 			&__left {
+				text-align: center;
 				@include media($tablet) {
+					/* screen size > $tablet */
+					/* 2 column inside the card */
 					@include span-columns(6 of 10);
 					text-align: left;
 				}
-				text-align: center;
+				@include media(max-width $mobile) {
+					/* specific code for layer of polish */
+					font-size: modular-scale(-1);
+					line-height: modular-scale(-1)*$base-line-height-ratio;
+				}
 			}
 
 			/* .calendar__card__right */
 			&__right {
 				@include media($tablet) {
+					/* screen size > $tablet */
+					/* 2 column inside the card */
 					@include span-columns(4 of 10);
 					padding-top: 20px;
 				}
@@ -96,105 +109,3 @@
 	#block-1 { border-radius: $border-radius $border-radius 0px 0px; }
 	#block-12 { border-radius: 0px 0px $border-radius $border-radius; }
 }
-
-
-// .calendar {
-// 	margin-bottom: 20px;
-// 	@include span-columns(12);
-
-// 	@include media($mobile) {
-// 		padding-left: $gutter/2;
-// 	}
-// 	@include media($tablet) {
-// 		padding-left: $gutter*1.35;
-// 	}
-
-// 	.calendar__card {
-// 		@include media($tablet) {
-// 			@include span-columns(4 of 12);
-// 			@include margin(null 1px 2px 1px);
-// 		}
-
-// 		@include media(min-width $mobile max-width $tablet) {
-// 			@include span-columns(6 of 12);
-// 			@include margin(null 1px 2px 1px);
-// 			height: 265px;
-// 		}
-
-// 		@include span-columns(12);
-// 		flex: 1;
-// 		margin-bottom: 2px;
-// 		background-color: $calendar-bg;
-// 		color: $loafer;
-// 		padding: 20px;
-// 		min-height: 200px;
-
-// 		// calendar__card content
-// 		@include direction-context(right-to-left) {
-// 			.--left-content {
-// 				@include media($tablet) {
-// 					@include span-columns(6 of 10);
-// 					text-align: left;
-// 				}
-// 				text-align: center;
-// 			}
-// 			.--right-content {
-// 				@include media($tablet) {
-// 					@include span-columns(4 of 10);
-// 					padding-top: 20px;
-// 				}
-// 				margin-bottom: 10px;
-// 			}
-// 		}
-
-// 		// calendar__card h3
-// 		h3 {
-// 			display: inline-block;
-// 		}
-// 		&.--consecutive {
-// 			h3 {
-// 				border-bottom: 5px solid $well-read;
-// 			}
-// 		}
-// 		&.--non-consecutive {
-// 			h3 {
-// 				border-bottom: 5px solid $teal;
-// 			}
-// 		}
-
-// 		// calendar__card modifiers
-// 		&.--mystery {
-// 			background-color: $newyear-bg;
-// 		}
-// 		&.--passed {
-// 			opacity: 0.5;
-// 		}
-
-// 		// Calendar Corners 
-// 		// separated this to keep code readable
-// 		@include media($tablet) {
-// 			&#block-1 { border-radius: $border-radius 0px 0px 0px; }
-// 			&#block-3 { border-radius: 0px $border-radius 0px 0px; }
-// 			&#block-10 { border-radius: 0px 0px 0px $border-radius; }
-// 			&#block-12 { border-radius: 0px 0px $border-radius 0px; }
-// 		}
-// 		@include media(min-width $mobile max-width $tablet) {
-// 			&#block-1 { border-radius: $border-radius 0px 0px 0px; }
-// 			&#block-2 { border-radius: 0px $border-radius 0px 0px; }
-// 			&#block-11 { border-radius: 0px 0px 0px $border-radius; }
-// 			&#block-12 { border-radius: 0px 0px $border-radius 0px; }
-// 		}
-// 		@include media(max-width $mobile) {
-// 			&#block-1 { border-radius: $border-radius $border-radius 0px 0px; }
-// 			&#block-12 { border-radius: 0px 0px $border-radius $border-radius; }
-// 		}
-
-// 	}
-// }
-
-// // Additional lines of CSS to simply add a layer of polish to the site
-// .calendar__card {
-// 	@include media(min-width 770px max-width 820px) {
-// 		height: 220px;
-// 	}
-// }

@@ -44,7 +44,7 @@
   // Change necessary images
   for(i=1; i<=12; i++) {
     //alert($("#block-"+i ).find( "p").text());
-    $("#block-"+i).removeClass("--non-consecutive").addClass("--consecutive");
+    $("#block-"+i).removeClass("calendar__card--nonconsecutive").addClass("calendar__card--consecutive");
   }
 
   // Change underlines to red
@@ -82,7 +82,7 @@ function calNoncon() {
   // Change necessary images
   for(i=1; i<=12; i++) {
     //alert($("#block-"+i ).find( "p").text());
-    $("#block-"+i).removeClass("--consecutive").addClass("--non-consecutive");
+    $("#block-"+i).removeClass("calendar__card--consecutive").addClass("calendar__card--nonconsecutive");
   }
 
   // Change underlines to green
