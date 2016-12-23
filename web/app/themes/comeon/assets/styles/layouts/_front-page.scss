@@ -58,7 +58,7 @@
 		/* Background has been declared in body found in ../layouts/header.scss */
 		@include padding(60px null 60px null);
 		min-height: 560px;
-		.mechanics {
+		&__mechanics {
 			/* Found in ../components/_mechanics.scss */
 		}
 	}
@@ -67,8 +67,20 @@
 	&__3 {
 		@include padding(60px null 60px null);
 		background: url(../images/hero-3-background.png) $well-read repeat 0 23px fixed;
-		.signup {
-			/* Found in ../components/_forms.scss */
+		&__signup {
+			/* general declarations found in ../components/_forms.scss */
+			text-align: center;
+			@include margin(20px null null null);
+			@extend .hero__3__signup;
+			@include span-columns(12);
+			@include media($mobile) {
+				@include span-columns(6 of 12);
+				@include shift(3);
+			}
+			@include media($tablet) {
+				@include span-columns(4 of 12);
+				@include shift(4);
+			}
 		}
 	}
 }

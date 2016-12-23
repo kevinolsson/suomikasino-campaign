@@ -10,6 +10,7 @@
 
 .mechanics {
 	/* .mechanics */
+	@extend .hero__2__mechanics;
 	&__steps {
 		/* .mechanics__steps */
 		position: relative;

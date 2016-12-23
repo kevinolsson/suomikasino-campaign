@@ -184,11 +184,11 @@
 			<h2>Join Suomikasino today!</h2>
 			<h4>Already have an account? <a href="#" class="header--medium">Login here</a></h4>
 		</div>
-	<div class="signup">
+	<div class="hero__3__signup">
 		<form action="#" method="POST">
 			<label for="email">Email Address</label>
-			<input type="email" class="signup__email" name="email" required placeholder="hello@email.com">
-			<input type="submit" class="signup__submit --button --teal">
+			<input type="email" class="input input--text" name="email" required placeholder="hello@email.com">
+			<input type="submit" class="input input--button button--teal">
 		</form>
 	</div>
 	</div><!--/hero__wrapper-->
