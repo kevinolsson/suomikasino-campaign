@@ -6,7 +6,7 @@
 
 -->
 
-<div class="pages__wrapper --posts">
+<div class="pages__wrapper">
   <main class="posts-list">
     <?php if (!have_posts()) : ?>
       <?php get_template_part('templates/page', 'header'); ?>
