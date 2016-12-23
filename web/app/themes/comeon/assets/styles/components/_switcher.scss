@@ -1,39 +1,37 @@
 .switcher {
-	@include span-columns(12);
-	@include media($tablet) {
-		@include span-columns(6);
-		@include shift(3);
-	}
-	@include margin(null null 10px null);
+	/* .switcher */
+	@extend .hero__1__switcher;
 	background-color: $calendar-bg;
 	border-radius: 100px;
-	color: $loafer;
 	line-height: 60px;
+	color: $loafer;
 	position: relative;
 	&:hover {
 		cursor: pointer;
 	}
+	@include span-columns(12);
+	@include margin(null null 10px null);
+	@include media($tablet) {
+		/* screen size > $tabelt */
+		@include span-columns(6);
+		@include shift(3);
+	}
+	@include media(max-width $mobile) {
+		/* drop down font-size on mobile */
+		font-size: modular-scale(-1);
+	}	
 
-	.switcher__left {
-		@include span-columns(3 of 6)
+	&__left, &__right {
+		/* .switcher__left && .switcher__right */
 		text-align: center;
 		position: relative;
 		z-index: 2;
-	}
-	.switcher__right {
-		@include span-columns(3 of 6)
-		text-align: center;
-		position: relative;
-		z-index: 2;
+		@include span-columns(3 of 6);
 	}
 
-	.--not-active {
-		opacity: .5;
-		font-weight: $regular;
-	}
-	
-
-	.switcher__button {
+	&__button {
+		/* .switcher__button */
+		/* included this here because its different from the other buttons */
 		width: 50%;
 		height: 100%;
 		background-color: $well-read;
@@ -43,27 +41,74 @@
 		border-radius: 100px;
 		transition: .3s ease;
 		margin-left: 0px;
-		&.--right {
+		&--right {
 			margin-left: 50%;
 			background-color: $teal;
 		}
 	}
 
-
-	// Additional layer of polish
-	@include media(max-width $mobile) {
+	&__post {
+		/* .switcher__post */
+		@include span-columns(12);
+		@include margin(null null 60px null);
+		text-align: center;
 		font-size: modular-scale(-1);
-	}	
-}
+		text-decoration: underline;
+		font-weight: $regular;
+		a {
+			font-family: $roboto-stack;
+		}
+	}
 
-.post-switcher {
-	@include span-columns(12);
-	@include margin(null null 60px null);
-	text-align: center;
-	font-size: modular-scale(-1);
-	text-decoration: underline;
-	font-weight: $regular;
-	a {
-		font-family: $roboto-stack;
+	/* modifiers */
+	/* .switcher--not-active */
+	&--notactive {
+		opacity: 0.5;
+		font-weight: $regular;
 	}
 }
+
+// .switcher {
+// 	@include span-columns(12);
+// 	@include media($tablet) {
+// 		@include span-columns(6);
+// 		@include shift(3);
+// 	}
+// 	@include margin(null null 10px null);
+// 	background-color: $calendar-bg;
+// 	border-radius: 100px;
+// 	color: $loafer;
+// 	line-height: 60px;
+// 	position: relative;
+// 	&:hover {
+// 		cursor: pointer;
+// 	}
+
+// 	.switcher__left {
+// 		@include span-columns(3 of 6)
+// 		text-align: center;
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// 	.switcher__right {
+// 		@include span-columns(3 of 6)
+// 		text-align: center;
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+
+// 	.--not-active {
+// 		opacity: .5;
+// 		font-weight: $regular;
+// 	}
+	
+
+// 	.switcher__button {
+
+// 	}
+
+
+// 	// Additional layer of polish
+
+// }
+

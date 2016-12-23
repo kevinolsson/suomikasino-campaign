@@ -142,10 +142,10 @@
 		</div><!--/calendar-->
 		<div class="switcher">
 			<div class="switcher__button"></div>
-			<div class="switcher__left --noselect"><a>Consecutive</a></div>
-			<div class="switcher__right --not-active --noselect"><a>Nonconsecutive</a></div>
+			<div class="switcher__left noselect"><a>Consecutive</a></div>
+			<div class="switcher__right noselect switcher--noactive"><a>Nonconsecutive</a></div>
 		</div><!--/switcher-->
-		<div class="post-switcher">
+		<div class="switcher__post">
 			<a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">What's the difference between Consecutive and Nonconsecutive Bonuses?</a>
 		</div>
 	</div><!--/hero__wrapper-->
