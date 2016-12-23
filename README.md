@@ -2,7 +2,7 @@
 A WordPress campaign for ComeOn!
 * Built using [Bedrock](https://roots.io/bedrock/) & [Sage](https://roots.io/sage/)
 * Consolidated using [Honcho](https://github.com/nickstenning/honcho)
-* Started with BEM but my SASS code looked a bit complicated so I compromised with a hybrid for my naming convention.
+* Used BEM for SaSS/CSS naming convention
 
 ## Requirements
 Make sure all dependencies have been installed before moving on:
