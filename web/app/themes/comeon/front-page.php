@@ -25,7 +25,7 @@
 
 		<div class="hero__1__redeem">
 				<input type="name" class="input input--text input--big input--attached-left" placeholder="Enter Code Here" name="code"/>
-				<input type="submit" class="input input--button input--big button--red input--attached-right" value="Redeem">
+				<input type="submit" id="redeem__button" class="input input--button input--big button--red input--attached-right" value="Redeem">
 		</div><!--/form-->
 
 		<!-- renamed hero__1__calendar to calendar to keep class name short -->

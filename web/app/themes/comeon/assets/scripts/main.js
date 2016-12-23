@@ -113,7 +113,7 @@ $(".switcher").click(function() {
 });
 
 // Show the modal
-$(".form__button").click(function() {
+$("#redeem__button").click(function() {
   // display block, before fading in to avoid jutters
   $(".modal__background").css("display","block");
   setTimeout(function(){
