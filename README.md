@@ -1,4 +1,4 @@
-# ComeOn Work Assignment
+# 12 Days of Suomikasino Christmas!
 A WordPress campaign for ComeOn!
 * Built using [Bedrock](https://roots.io/bedrock/) & [Sage](https://roots.io/sage/)
 * Consolidated using [Honcho](https://github.com/nickstenning/honcho)
