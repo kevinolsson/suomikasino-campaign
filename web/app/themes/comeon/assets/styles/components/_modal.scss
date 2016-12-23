@@ -60,7 +60,9 @@
 	/* .modal--mesage */
 	&--message {
 		opacity: 0.3;
-		margin-top: 40px;
+		margin-top: 20px;
+		position: relative;
+		top: 20px;
 	}
 
 	/* animate background */
