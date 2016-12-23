@@ -1,72 +1,78 @@
 .navigation {
-	@include padding(30px 30px null 30px);
-	@include span-columns(12);
+	/* .navigation */
 	width: 100%;
 	position: absolute;
 	top: 0px;
 	color: $loafer;
 	text-align: center;
+	@include padding(30px 30px null 30px);
+	@include span-columns(12);
 	@include media($tablet) {
 		text-align: left;
 	}
-	.navigation__logo {
+
+	&__logo {
+		/* .navigation__logo */
 		display: inline-block;
 		position: relative;
 		z-index: 2;
-	}
-	.navigation__logo img {
-		@include media($mobile){
-			max-width: 300px;
+		img {
+			/* navigation__logo img */
+			max-width: 200px;
+			height: auto;
+			@include media($mobile){
+				max-width: 300px;
+			}
 		}
-		max-width: 200px;
-		height: auto;
 	}
-}
 
-.navigation__menu {
-	transition: 0.1s;
-	position: relative;
-	@include span-columns(12);
-	@include media($tablet) {
-		text-align: right;
-		top: -50px;
-	}
-	top: 15px;
-	text-align: center;
-}
+	&__menu {
+		/* .navigation__menu */
+		transition: 0.1s;
+		position: relative;
+		top: 15px;
+		text-align: center;
+		@include span-columns(12);
+		@include media($tablet) {
+			text-align: right;
+			top: -50px;
+		}
 
-.navigation__menu--ul {
-	list-style: none;
-	display: inline-block;
-	padding: 0px;
-	margin: 0px;
-	li {
-		float: left;
-		a {	
+		&__ul {
+			/* .navigation__menu__ul */
+			list-style: none;
 			display: inline-block;
-			@include padding(10px 5px 10px 5px);
-			@include media($mobile) {
-				@include padding(10px 10px 10px 10px);
+			padding: 0px;
+			margin: 0px;
+			li {
+				float: left;
+				a {	
+					display: inline-block;
+					@include padding(10px 5px 10px 5px);
+					@include media($mobile) {
+						@include padding(10px 10px 10px 10px);
+					}
+				}
+			}
+			li:last-child {
+				background-color: $teal;
+				border-radius: $border-radius;
+				margin-left: 5px;
+				&:hover {
+					background-color: darken($teal,5%);
+				}
+				a {
+					@include padding(10px 10px 10px 10px);
+					@include media($mobile) {
+						@include padding(10px 25px 10px 25px);
+					}
+				}
+			}
+			
+			//additional layer of polish
+			@include media(max-width 350px) {
+				font-size: modular-scale(-1);
 			}
 		}
-	}
-	li:last-child {
-		background-color: $teal;
-		border-radius: $border-radius;
-		margin-left: 5px;
-		&:hover {
-			background-color: darken($teal,5%);
-		}
-		a {
-			@include padding(10px 10px 10px 10px);
-			@include media($mobile) {
-				@include padding(10px 25px 10px 25px);
-			}
-		}
-	}
-	
-	//additional layer of polish
-	@include media(max-width 350px) {
-		font-size: modular-scale(-1);
 	}
 }
