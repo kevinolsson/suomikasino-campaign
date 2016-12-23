@@ -6,6 +6,22 @@
 			@include padding(null 20px null 20px);
 		}
 	}
+
+	/* .hero__1 */
+	
+}
+
+
+
+
+.hero {
+	/* .hero__wrapper */
+	&__wrapper {
+		@include outer-container();
+		@include media(max-width $tablet) {
+			@include padding(null 20px null 20px);
+		}
+	}
 }
 
 .hero-1 {
