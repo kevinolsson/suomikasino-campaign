@@ -19,10 +19,7 @@ Make sure all dependencies have been installed before moving on:
 		$ composer install
 				
 2. Set up your database.
-		# make sure mysql is running
 		mysql.server start
-		
-		# set things up
 		$ mysql -u root -p
 
 		mysql> CREATE DATABASE database_name;
