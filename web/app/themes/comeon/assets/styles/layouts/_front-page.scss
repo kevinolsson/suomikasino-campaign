@@ -8,61 +8,70 @@
 	}
 
 	/* .hero__1 */
-	
-}
+	&__1 {
+		background: url(../images/hero-background.jpg) $cocoa-brown no-repeat fixed;
+		background-size: cover;
+		@include padding(150px null null null);
+		@include hidpi(1.5) {
+			/* retina screen */
+			background: url(../images/hero-background@2x.jpg) $cocoa-brown no-repeat fixed;
+			background-size: 100%;
+			background-size: cover;
+			/* for some odd reason I have to redeclare background related syntax when dealing with @hidpi */
+		}
+		&__redeem {
+			/* general form related declarations in ../components/_forms.scss */
+			/* following declarations are uniqe to .hero__1__redeem */
+			@include margin(20px null 20px null)
+			@include media($mobile) {
+				/* when screen width > $mobile */
+				@include span-columns(6);
+				@include shift(3);
+			}
+			input {
+				&:nth-child(1) {
+					/* first input */
+					@include media($mobile) {
+						@include span-columns(6 of 10, $display: block-collapse);
+					}
+				}
+				&:nth-child(2) {
+					/* second input */
+					@include media($mobile) {
+						@include span-columns(4 of 10, $display: block-collapse);
+					}
+				}
+			}
+			
+		}
+		&__calendar {
+			/* general declarations in ../components/_calendar.scss
+												../components/_calendar-images.scss */
+		}
+		&__switcher {
+			/* general declarations in ../components/_switcher.scss */
+		}
+	}
 
+	/* .hero__2 */
+	&__2 {
+		/* Background has been declared in body found in ../layouts/header.scss */
+		@include padding(60px null 60px null);
+		min-height: 560px;
+		.mechanics {
+			/* Found in ../components/_mechanics.scss */
+		}
+	}
 
-
-
-.hero {
-	/* .hero__wrapper */
-	&__wrapper {
-		@include outer-container();
-		@include media(max-width $tablet) {
-			@include padding(null 20px null 20px);
+	/* .hero__3 */
+	&__3 {
+		@include padding(60px null 60px null);
+		background: url(../images/hero-3-background.png) $well-read repeat 0 23px fixed;
+		.signup {
+			/* Found in ../components/_forms.scss */
 		}
 	}
 }
-
-.hero-1 {
-	@include padding(150px null null null);
-	background: url(../images/hero-background.jpg) $cocoa-brown no-repeat fixed;
-	background-size: cover;
-	@include hidpi(1.5) {
-		background: url(../images/hero-background@2x.jpg) $cocoa-brown no-repeat fixed;
-		background-size: 100%;
-		background-size: cover;
-	}
-	
-	.front-page__form {
-		/* Found in ../components/_forms.scss */
-	}
-	.calendar{
-		/* Found in ../components/_calendar.scss
-						../components/_calendar-images.scss */
-	}
-	.switcher {
-		/* Found in ../components/_switcher.scss */
-	}
-}
-
-.hero-2 {
-	/* Background has been declared in body found in ../layouts/header.scss */
-	@include padding(60px null 60px null);
-	min-height: 560px;
-	.mechanics {
-		/* Found in ../components/_mechanics.scss */
-	}
-}
-
-.hero-3 {
-	@include padding(60px null 60px null);
-	background: url(../images/hero-3-background.png) $well-read repeat 0 23px fixed;
-	.signup {
-		/* Found in ../components/_forms.scss */
-	}
-}
-
 
 
 

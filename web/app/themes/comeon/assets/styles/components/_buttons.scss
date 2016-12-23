@@ -7,12 +7,20 @@
 	}
 
 	/* modifiers */
-	
+
 	/* .button--teal */
 	&--teal {
 		background-color: $teal;
 		&:hover {
-			background-color: darken($teal,2%);
+			background-color: darken($teal,5%);
+		}
+	}
+
+	/* .button--red */
+	&--red {
+		background-color: $well-read;
+		&:hover {
+			background-color: darken($well-read,5%);
 		}
 	}
 

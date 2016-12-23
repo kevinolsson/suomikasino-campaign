@@ -20,7 +20,7 @@ Make sure all dependencies have been installed before moving on:
 				
 2. Set up your database.
 
-		mysql.server start
+		$ mysql.server start
 		$ mysql -u root -p
 		mysql> CREATE DATABASE database_name;
 		mysql> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';

@@ -1,87 +1,49 @@
-.front-page__form {
-	@include margin(20px null 20px null)
-	@include media($mobile) {
-		@include span-columns(6);
-		@include shift(3);
-	}
-	.form__input {
-		@include media($mobile) {
-			@include span-columns(6 of 10, $display: block-collapse);
-		}
-	}
-	.form__button {
-		@include media($mobile) {
-			@include span-columns(4 of 10, $display: block-collapse);
-		}
-	}
-}
-
-.signup {
-	@include span-columns(12);
-	@include media($tablet) {
-		@include span-columns(4 of 12);
-		@include shift(4);
-	}
-	@include media(min-width $mobile max-width $tablet) {
-		@include span-columns(6 of 12);
-		@include shift(3);
-	}
-	@include margin(20px null 20px null);
-	text-align: center;
-	color: $loafer;
-}
-
-input {
-	background-color: $loafer;
+.input {
 	border: none;
-	height: 50px;
 	outline: none;
-	-webkit-appearance: none;
-	@include padding(null 15px null 15px);
-	margin-bottom: 15px;
 	border-radius: $border-radius;
+	height: 50px;
+	-webkit-appearance: none;
 	@include fill-parent;
-
-	// modifiers
-	&.--button {
-		font-family: $roboto-slab-stack;
-		color: $loafer;
-	}
+	@include padding(null 15px null 15px);
+	@include margin(null null 0px null);
 	
-	&.--red {
-		background-color: $well-read;
-		&:hover {
-			background-color: darken($well-read,5%);
-		}
-	}
-	&.--teal {
-		background-color: $teal;
-		&:hover {
-			background-color: darken($teal,5%);
-		}
+	/* .input--text */
+	&--text {
+		background-color: $loafer;
 	}
 
-	&.--big {
+	/* .input--button */
+	&--button {
+		@extend .button;
+	}
+
+	/* .input--big */
+	&--big {
 		height: 60px;
 	}
 
-	&.--attached-left {
+	/* .input--attached-left */
+	&--attached-left {
 		border-radius: $border-radius $border-radius 0px 0px;
 		margin-bottom: 0px;
-		//Its assumed that the left value will be on top
 		@include media($mobile) {
+			/* when screen width > $mobile */
+			/* its assumed that the left value input will be on top come mobile */
 			border-radius: $border-radius 0px 0px $border-radius;
 		}
 	}
-	&.--attached-right {
+	/* .input--attached-right */
+	&--attached-right {
 		border-radius: 0px 0px $border-radius $border-radius;
 		@include media($mobile) {
+			/* when screen width > $mobile */
 			border-radius: 0px $border-radius $border-radius 0px;
 		}
 	}
 }
 
-// placeholders
+/* placeholders */
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    $mine-shaft;
     opacity: 0.5;
@@ -99,3 +61,4 @@ input {
    color:    $mine-shaft;
    opacity: 0.5;
 }
+
