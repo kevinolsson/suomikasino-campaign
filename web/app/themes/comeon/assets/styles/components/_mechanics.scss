@@ -9,44 +9,40 @@
 }
 
 .mechanics {
-	.mechanics__steps {
+	/* .mechanics */
+	&__steps {
+		/* .mechanics__steps */
+		position: relative;
+		padding: 20px;
+		color: $loafer;
+		text-align: center;
 		@include span-columns(12);
 		@include media($tablet) {
 			@include span-columns(3 of 12);
 			@include padding(40px 20px 40px 20px);
 			@include margin(40px null 30px null);
 		}
-		position: relative;
-		padding: 20px;
-		color: $loafer;
-		text-align: center;
 
-		&:nth-child(1) {
-			.mechanics__steps__image {
-				@include mechanic-steps-image(0);
+		&__image {
+			/* .mechanics__steps__image */
+			&--1 {
+				/* .mecahnics__steps__image--1 */
 				position: relative;
 				left: 10px;
+				@include mechanic-steps-image(0);
 			}
-		}
-		&:nth-child(2) {
-			.mechanics__steps__image {
+			&--2 {
 				@include mechanic-steps-image(-115px);
 			}
-		}
-		&:nth-child(3) {
-			.mechanics__steps__image {
+			&--3 {
 				@include mechanic-steps-image(-230px);
 			}
-		}
-		&:nth-child(4) {
-			background-color: $mechanic-bg;
-			border-radius: $border-radius;
-			.mechanics__steps__image {
+			&--4 {
 				@include mechanic-steps-image(-345px);
 			}
 		}
-
-		.--arrow {
+		&__arrow {
+			/* mechanics__steps__arrow */
 			width: 31px;
 			height: 30px;
 			background: url(../images/arrow--down.svg);
@@ -58,6 +54,13 @@
 				top: 50px;
 				background: url(../images/arrow.svg);
 			}
+		}
+
+		/* modifiers */
+		&--highlight {
+			/* mechanics__steps--highlight */
+			background-color: $mechanic-bg;
+			border-radius: $border-radius;
 		}
 	}
 }

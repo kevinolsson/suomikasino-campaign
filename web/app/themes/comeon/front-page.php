@@ -20,7 +20,7 @@
 		
 		<div class="header">
 			<h1>12 days of Christmas!</h1>
-			<h4>Login and play from the <span class="--medium">25th of December</span> to the <span class="--medium">5th of January</span> to unlock these <span class="--medium">amazing bonuses</span>!</h4>		
+			<h4>Login and play from the <span class="header--medium">25th of December</span> to the <span class="header--medium">5th of January</span> to unlock these <span class="header--medium">amazing bonuses</span>!</h4>		
 		</div><!--/header-->
 
 		<div class="hero__1__redeem">
@@ -153,26 +153,26 @@
 <div class="hero__2">
 	<div class="hero__wrapper">
 		<div class="header">
-			<h2 class="--centered">How to Join</h2>
-			<h4 class="--centered">Participating is as easy as <span class="--1medium">following these 4 steps!</span></h4>
+			<h2>How to Join</h2>
+			<h4>Participating is as easy as <span class="--1medium">following these 4 steps!</span></h4>
 		</div>
 		<div class="mechanics">
 			<div class="mechanics__steps">
-				<div class="mechanics__steps__image"></div>
+				<div class="mechanics__steps__image--1"></div>
 				<h5>Login and Play during the 12 days of Christmas</h5>
-				<div class="--arrow"></div>
+				<div class="mechanics__steps__arrow"></div>
 			</div>
 			<div class="mechanics__steps">
-				<div class="mechanics__steps__image"></div>
+				<div class="mechanics__steps__image--2"></div>
 				<h5>A code will be sent to your phone via SMS</h5>
-				<div class="--arrow"></div>
+				<div class="mechanics__steps__arrow"></div>
 			</div>
 			<div class="mechanics__steps">
-				<div class="mechanics__steps__image"></div>
+				<div class="mechanics__steps__image--3"></div>
 				<h5>Use that code to redeem your bonus!</h5>
 			</div>
-			<div class="mechanics__steps">
-				<div class="mechanics__steps__image"></div>
+			<div class="mechanics__steps mechanics__steps--highlight">
+				<div class="mechanics__steps__image--4"></div>
 				<h5>Login and play for consecutive days to get bigger bonuses!</h5>
 			</div>
 		</div><!--/mechanics-->
@@ -181,8 +181,8 @@
 <div id="signup" class="hero__3">
 	<div class="hero__wrapper">
 		<div class="header">
-			<h2 class="--centered">Join Suomikasino today!</h2>
-			<h4 class="--centered">Already have an account? <a href="#" class="--medium">Login here</a></h4>
+			<h2>Join Suomikasino today!</h2>
+			<h4>Already have an account? <a href="#" class="header--medium">Login here</a></h4>
 		</div>
 	<div class="signup">
 		<form action="#" method="POST">
