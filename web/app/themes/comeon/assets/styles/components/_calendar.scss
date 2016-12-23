@@ -17,10 +17,17 @@
 		margin-bottom: 2px;
 		background-color: $calendar-bg;
 		color: $loafer;
-		padding: 20px;
-		height: 280px;
-		@include span-columns(6 of 12);
-		@include margin(null 1px 2px 1px);
+		padding: 10px;
+		@include span-columns(12);
+		@include margin(1px null null null);
+
+		@include media($mobile) {
+			/* screen size > $mobile */
+			@include span-columns(6 of 12);
+			@include margin(null 1px 2px 1px);
+			height: 180px;
+			padding: 20px;
+		}
 		@include media($tablet) {
 			/* screen size > $tablet */
 			/* 3 calendar cards per row when on desktop */
@@ -28,35 +35,23 @@
 			margin-right: 0px;
 			height: 200px;
 		}
-		@include media(min-width $mobile max-width $tablet) {
-			height: 260px;
-		}
 
 		@include direction-context(right-to-left) {
 			/* .calendar__card__left */
 			&__left {
-				text-align: center;
-				@include media($tablet) {
-					/* screen size > $tablet */
-					/* 2 column inside the card */
-					@include span-columns(6 of 10);
-					text-align: left;
-				}
+				text-align: left;
+				@include span-columns(6 of 10);
 				@include media(max-width $mobile) {
-					/* specific code for layer of polish */
-					font-size: modular-scale(-1);
-					line-height: modular-scale(-1)*$base-line-height-ratio;
+				/* specific code for layer of polish */
+				font-size: modular-scale(-1);
+				line-height: modular-scale(-1)*$base-line-height-ratio;
 				}
 			}
 
 			/* .calendar__card__right */
 			&__right {
-				@include media($tablet) {
-					/* screen size > $tablet */
-					/* 2 column inside the card */
-					@include span-columns(4 of 10);
-					padding-top: 20px;
-				}
+				@include span-columns(4 of 10);
+				padding-top: 20px;
 				margin-bottom: 10px;
 			}
 		}

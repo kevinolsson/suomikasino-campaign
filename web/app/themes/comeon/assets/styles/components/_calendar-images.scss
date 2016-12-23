@@ -1,16 +1,15 @@
 @mixin calendar-sprite($x, $y) {
-	background: url(../images/calendar_icons.png);
+	background: url(../images/calendar_icons@2x.png);
 	background-position: $x $y;
-	width: 90px;
-	height: 90px;
-	background-size: 1080px;
 	margin: 0 auto;
 	transition: 0s;
-	@include hidpi(1.5) {
-		background: url(../images/calendar_icons@2x.png);
-		background-position: $x $y;
-		background-size: 1080px;
-		/* For some odd reason; I have to redeclare a few lines of Sass when using the @include hidpi() function. */
+	width: 70px;
+	height: 70px;
+	background-size: 840px; /* 70*12 */
+	@include media($tablet) {
+		width: 90px;
+		height: 90px;
+		background-size: 1080px; /* 90*12 */
 	}
 }
 
@@ -19,14 +18,20 @@
 		&__card--consecutive {
 			&#block-#{$i+1} {
 				.calendar__card__image {
-					@include calendar-sprite($i*-90px,0px);
+					@include calendar-sprite($i*-70px,0px);
+					@include media($tablet) {
+						@include calendar-sprite($i*-90px,0px);
+					}
 				}
 			}
 		}
 		&__card--nonconsecutive {
 			&#block-#{$i+1} {
 				.calendar__card__image {
-					@include calendar-sprite($i*-90px,-90px);
+					@include calendar-sprite($i*-70px,-70px);
+					@include media($tablet) {
+						@include calendar-sprite($i*-90px,-90px);
+					}
 				}
 			}
 		}
