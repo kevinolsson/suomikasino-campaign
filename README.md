@@ -2,7 +2,7 @@
 A WordPress campaign for ComeOn!
 * Built using [Bedrock](https://roots.io/bedrock/) & [Sage](https://roots.io/sage/)
 * Consolidated using [Honcho](https://github.com/nickstenning/honcho)
-* Started with BEM but my SASS code looked a bit complicated so I compromised with a hybrid for my naming convention.
+* Used BEM for SaSS/CSS naming convention
 
 ## Requirements
 Make sure all dependencies have been installed before moving on:
@@ -19,7 +19,7 @@ Make sure all dependencies have been installed before moving on:
 		$ composer install
 				
 2. Set up your database.
-
+		mysql.server start
 		$ mysql -u root -p
 
 		mysql> CREATE DATABASE database_name;
