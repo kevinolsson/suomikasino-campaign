@@ -1,18 +1,21 @@
 <div class="modal__background">
 	<div class="modal__wrapper">
 
-		<div class="modal__">
+		<div class="modal">
 			<div class="header">
-				<h4 class="header--centered">On the 1st day of Christmas Suomikasino gave to me</h4>
-				<h1 class="header--centered">€999 Bonus Money to get started!</h1>
+				<h4>On the 1st day of Christmas Suomikasino gave to me</h4>
+				<h1>€999 Bonus Money to get started!</h1>
 
 			</div>
-			<a class="modal__button">Continue</a>
+			<a class="button button--big button--teal modal__button">Continue</a>
 		</div>
-		<p>Promo Code entered accepted! Your bonus has been added/applied to your account!</p>
+		<p class="modal--message">Promo Code entered accepted! Your bonus has been added/applied to your account!</p>
 	</div>
 </div>
-<div class="hero-1">
+
+
+
+<div class="hero__1">
 	<div class="hero__wrapper">
 		
 		<div class="header">
@@ -143,8 +146,8 @@
 			<a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">What's the difference between Consecutive and Nonconsecutive Bonuses?</a>
 		</div>
 	</div><!--/hero__wrapper-->
-</div><!--/hero-->
-<div class="hero-2">
+</div><!--/hero__1-->
+<div class="hero__2">
 	<div class="hero__wrapper">
 		<div class="header">
 			<h2 class="--centered">How to Join</h2>
@@ -171,8 +174,8 @@
 			</div>
 		</div><!--/mechanics-->
 	</div><!--/hero__wrapper-->
-</div><!--/hero-2-->
-<div id="signup" class="hero-3">
+</div><!--/hero__2-->
+<div id="signup" class="hero__3">
 	<div class="hero__wrapper">
 		<div class="header">
 			<h2 class="--centered">Join Suomikasino today!</h2>
@@ -186,4 +189,4 @@
 		</form>
 	</div>
 	</div><!--/hero__wrapper-->
-</div><!--/hero-3-->
+</div><!--/hero__3-->

@@ -1,12 +1,38 @@
 body {
-
 	background: url(../images/hero-2-background.png) $body-bg repeat 0 2px fixed;
 	@include media(max-width $mobile) {
-		margin-top: -20px;
-		//cheap fix to a spacing issue
+		margin-top: -20px; /* band-aid solution */
 	}
 }
 
 body * {
 	transition: all 0.1s ease-in;
+}
+
+.header {
+	@include span-columns(12);
+	text-align: center;
+
+	a {
+		font-weight: $bold;
+		text-decoration: underline;
+	}
+
+	h4 {
+		@include media($mobile) {
+			/* when screen is > $mobile */
+			@include span-columns(10 of 12);
+			@include shift(1);
+		}
+	}
+
+	/* .header--left-aligned */
+	&--left-aligned {
+		text-align: left;
+	}
+
+	/* .header--medium */
+	&--medium {
+		font-weight: $medium;
+	}
 }

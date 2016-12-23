@@ -1,92 +1,74 @@
-.modal__background {
-	width: 100%;
-	height: 100%;
-	background-color: $modal-bg;
-	position: fixed;
-	z-index: 5;
-	top: 0px;
-	left: 0px;
-	display: none;
-	opacity: 0;
-}
-
-.modal__wrapper {
-	margin-top: 8%;
-	@include media(max-width $mobile) {
-		margin-top: 16%;
-	}
-	@include outer-container();
-	@include padding(null 20px null 20px);
-	color: $loafer;
-	text-align: center;
-	p {
-		opacity: 0.3;
-		margin-top: 20px;
-		position: relative;
-		top: 20px;
-	}
-
-	.modal__ {
-		@include span-columns(12);
-		background: url(../images/modal_background-image--mobile@2x.jpg);
-		animation: panning 100s infinite linear;
-		background-size: 150%;
+.modal {
 		text-align: center;
   		color: $loafer;
 		border-radius: $border-radius*3;
 		box-shadow: 0 2px 7px 0 rgba(0,0,0,0.10);
-		@include padding(10% 5% 10% 5%);
 		position: relative;
 		z-index: 10;
+		background: url(../images/modal_background-image--mobile@2x.jpg);
+		background-size: 150%;
+		animation: panning 100s infinite linear;
+		@include span-columns(12);
+		@include padding(10% 5% 10% 5%);
 		@include media($tablet) {
+			/* when screen is > $tablet */
 			background: url(../images/modal_background-image@2x.jpg);
-			background-size: 150%;
-			animation: panning 100s infinite linear;
 			min-height: 560px;
 		}
 
+	/* .modal__background */
+	&__background {
+		width: 100%;
+		height: 100%;
+		background-color: $modal-bg;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 5;
+		display: none;
+		opacity: 0;
+	}
 
-		.modal__button {
-			border-radius: $border-radius;
-			background-color: $teal;
-			@include media($mobile) {
-				width: 300px;
-				margin-top: 20px;
-			}
-			font-size: modular-scale(1);
-			width: 100%;
-			display: inline-block;
-			text-align: center;
-			line-height: 60px;
-			&:hover {
-				background-color: darken($teal,5%);
-				cursor: pointer;
-			}
+	/* .modal__wrapper */
+	&__wrapper {
+		margin-top: 16%;
+		color: $loafer;
+		text-align: center;
+		@include padding(null 20px);
+		@include outer-container();
+		@include media($mobile) {
+			/* when screen is > $mobile */
+			margin-top: 8%
 		}
 
-		h1 {
-			@include media(max-width $mobile) {
-				font-size: modular-scale(3);
-			}
+	}
+
+	/* .modal__button */
+	&__button {
+		margin-top: 20px;
+	}
+
+	/* modifiers */
+
+	/* .modal--adjust-mobile */
+	&--adjust-mobile {
+		@include media(max-width $mobile) {
+			/* when max-width of is < $mobile */
+			font-size: modular-scale(3);
 		}
 	}
-}
+	/* .modal--mesage */
+	&--message {
+		opacity: 0.3;
+		margin-top: 40px;
+	}
 
-/* For panning background-image on __modal */
-@keyframes panning {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 100% 100%;
-  }
-   50% {
-    background-position: 100% 0%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  200% {
-    background-position: 0 0;
-  }
+	/* animate background */
+	@keyframes panning {
+	  0%	{ background-position: 0% 0%; 	}
+	  25%	{ background-position: 100% 100%;}
+	  50%	{ background-position: 100% 0%; 	}
+	  75%	{ background-position: 0 100%; 	}
+	  200%{ background-position: 0 0; 		}
+	}
 }

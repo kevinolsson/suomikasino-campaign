@@ -1,0 +1,29 @@
+.button {
+	color: $loafer;
+	border-radius: $border-radius;
+	display: inline-block;
+	&:hover {
+		cursor: pointer;
+	}
+
+	/* modifiers */
+	
+	/* .button--teal */
+	&--teal {
+		background-color: $teal;
+		&:hover {
+			background-color: darken($teal,2%);
+		}
+	}
+
+	/* .button--big */
+	&--big {
+		font-size: modular-scale(1);
+		width: 300px;
+		@include padding(20px null);
+		@include media(max-width $mobile) {
+			@include padding(20px 0px);
+			width: 100%;
+		}
+	}
+}
